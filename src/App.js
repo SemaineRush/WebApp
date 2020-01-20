@@ -9,6 +9,7 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         eliott
         test
+        lolo
       </header>
     </div>
   );
