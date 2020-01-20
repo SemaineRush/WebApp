@@ -6,6 +6,11 @@ export default class LogIn extends Component {
             <div>
                 <span>Login</span>
                 <input type="text" value="submit"/>
+                <input type="text" value="submit"/>
+                <input type="text" value="submit"/>
+                <input type="text" value="submit"/>
+                <input type="text" value="submit"/>
+                <input type="text" value="submit"/>
             </div>
         )
     }
