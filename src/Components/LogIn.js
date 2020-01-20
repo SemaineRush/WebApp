@@ -5,6 +5,7 @@ export default class LogIn extends Component {
         return (
             <div>
                 <span>Login</span>
+                <input type="text" value="submit"/>
             </div>
         )
     }
