@@ -8,10 +8,10 @@ import {BrowserRouter as Router, Route} from 'react-router-dom';
 function App() {
   return (
     <Router>
-    <div className="App">
-      <Route exact path="/login" component={ LogIn } />
-      <Route exact path="/register" component={ Register } />
-    </div>
+      <div className="App">
+        <Route exact path="/login" component={ LogIn } />
+        <Route exact path="/register" component={ Register } />
+      </div>
     </Router>
   );
 }
