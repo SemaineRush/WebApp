@@ -1,17 +1,18 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import LogIn from './Components/LogIn'
+import Register from './Components/Register'
+import {BrowserRouter as Router, Route} from 'react-router-dom';
+
 
 function App() {
   return (
+    <Router>
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        eliott
-        test
-        lolo
-      </header>
+      <Route exact path="/login" component={ LogIn } />
+      <Route exact path="/register" component={ Register } />
     </div>
+    </Router>
   );
 }
 
