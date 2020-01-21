@@ -12,7 +12,8 @@ export default class LogIn extends Component {
                 </div>
                 <div className="description">
                   <p>Guiral <span>Lapouge</span></p>
-                  <input type="radio" name="candidate" />
+                  <input type="radio" name="candidate" id="candidate-1" />
+                  <label className="candidate-button" htmlFor="candidate-1"></label>
                 </div>
               </div>
               <div className="candidate">
@@ -21,7 +22,8 @@ export default class LogIn extends Component {
                 </div>
                 <div className="description">
                   <p>Guiral <span>Lapouge</span></p>
-                  <input type="radio" name="candidate" />
+                  <input type="radio" name="candidate" id="candidate-2" />
+                  <label className="candidate-button" htmlFor="candidate-2"></label>
                 </div>
               </div>
               <div className="candidate">
