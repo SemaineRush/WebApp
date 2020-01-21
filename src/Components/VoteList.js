@@ -12,7 +12,7 @@ export default class LogIn extends Component {
                 </div>
                 <div className="description">
                   <p>Guiral <span>Lapouge</span></p>
-                  <input type="checkbox" name="candidate" />
+                  <input type="radio" name="candidate" />
                 </div>
               </div>
               <div className="candidate">
@@ -21,7 +21,7 @@ export default class LogIn extends Component {
                 </div>
                 <div className="description">
                   <p>Guiral <span>Lapouge</span></p>
-                  <input type="checkbox" name="candidate" />
+                  <input type="radio" name="candidate" />
                 </div>
               </div>
               <div className="candidate">
@@ -30,7 +30,7 @@ export default class LogIn extends Component {
                 </div>
                 <div className="description">
                   <p>Guiral <span>Lapouge</span></p>
-                  <input type="checkbox" name="candidate" />
+                  <input type="radio" name="candidate" />
                 </div>
               </div>
               <div className="candidate">
@@ -39,7 +39,7 @@ export default class LogIn extends Component {
                 </div>
                 <div className="description">
                   <p>Guiral <span>nneononln</span></p>
-                  <input type="checkbox" name="candidate" />
+                  <input type="radio" name="candidate" />
                 </div>
               </div>
             </div>
