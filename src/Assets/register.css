@@ -1,25 +1,68 @@
-.form_container{
-    border: 1px solid #B2B2B2;
-    border-radius: 5px;
-    width: 60vw;
-    margin: auto;
+.register_container{
+    width: 35vw;
     padding: 40px 0px;
     margin-top: 50px;
 }
 
+.form_line h3 {
+    font-weight: 200;
+}
+
+.login_register {
+    display: flex;
+    justify-content: space-around;
+}
+
+.link_account {
+    text-decoration: none;
+    margin-top: 8%;
+    display: block;
+}
+
+.already_account {
+    text-decoration: none;
+    color: #B2B2B2;
+}
+
+.form_login {
+    margin-left: 8%;
+}
+
+.login_container {
+    width: 33vw;
+    padding: 40px 0px;
+    margin-top: 50px;
+}
+
+.sign_account {
+    color: #8388FF;
+    font-size: 19px;
+    margin-left: 10px;
+}
+
 .form_button{
-    margin-top: 30px;
-    background-color: #862766;
-    padding: 15px 50px;
+    margin-top: 50px;
+    background-color: #5F63D4;
+    padding: 7px 28%;
     color: #fff;
     font-size: 17px;
     font-weight: bold;
-    border-radius: 5px;
+    border-radius: 25px;
 }
 
-.form_input{
-    width: 80%;
-    height: 3vh;
+.forgot_password {
+    margin-top: 2px;
+    margin-left: 10%;
+    text-decoration: none;
+    color: black;
+    font-weight: 100;
+    font-size: 14px;
+}
+
+.form_input {
+    margin-right: 23%;
+    width: 57%;
+    height: 4vh;
     border: none;
     border-bottom: 1px solid #E6E6E6;
 }
@@ -27,19 +70,54 @@
 .form_line h3{
     color: #B2B2B2;
     text-align: start;
+    text-transform: uppercase;
     padding-left: 10%;
-    margin-top: 60px;
+}
+
+.login h3 {
+    margin-top: 50px;
+    font-size: 15px;
+    height: 13px;
+}
+
+.circle_folder {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    background: green;
+}
+
+.separator_file {
+    margin-top: 5%;
+}
+
+.rights {
+    margin-top: 2%;
+    color: #444444;
+    font-size: 14px;
+}
+
+.separator_file hr {
+    width: 0.1%;
+    height : 32vh;
+    background-color: #707070;
+}
+
+.register h3 {
+    font-size: 15px;
+    margin-top: 18px;
+    height: 13px;
 }
 
 .img_frame{
     background-color: #FAFAFA;
     border-radius: 50%;
-    max-height: 10%;
-    max-width: 10%;
     margin: auto;
-    box-shadow: 0px 0px 11px 0px rgba(217,217,217,1);
+    box-shadow: 0px 0px 8px 0px rgba(217,217,217,1);
 }
 
 .img_frame img{
-    padding: 20px;
+    width: 45%;
+    padding: 15px;
+    height: 55%;
 }
