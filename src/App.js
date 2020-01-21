@@ -7,7 +7,7 @@ import {BrowserRouter as Router, Route} from 'react-router-dom';
 
 function App() {
   return (
-    <div>
+    <>
       <Header/>
       <Router>
         <div className="App">
@@ -15,7 +15,7 @@ function App() {
           <Route exact path="/vote" component={ Vote } />
         </div>
       </Router>
-    </div>
+    </>
 
   );
 }
