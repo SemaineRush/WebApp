@@ -8,14 +8,15 @@ import {BrowserRouter as Router, Route} from 'react-router-dom';
 
 function App() {
   return (
-    <Header />
-
-    <Router>
-      <div className="App">
-        <Route exact path="/sign" component={ Sign } />
-        <Route exact path="/vote" component={ Vote } />
-      </div>
-    </Router>
+    <div>
+      <Header/>
+      <Router>
+        <div className="App">
+          <Route exact path="/sign" component={ Sign } />
+          <Route exact path="/vote" component={ Vote } />
+        </div>
+      </Router>
+    </div>
 
   );
 }
