@@ -22,9 +22,7 @@ export default class Maeliss extends Component {
 					<img src={arrowTwo} className="arrow-two" />
 					<img src={paf} className="paf" />
 
-					<p className="p-one">
-						leader<span />de<span />confiance
-					</p>
+					<p className="p-one">leader de confiance</p>
 					<p className="p-two">multiculturelle</p>
 					<div className="boom">
 						<img src={bubleOne} />
@@ -32,15 +30,15 @@ export default class Maeliss extends Component {
 					</div>
 					<div className="buble">
 						<img src={bubleTwo} />
-						<p>
+						<h1>
 							maëliss<br />taraud<br />
 							<span>
 								<div />maire
 							</span>
-						</p>
+						</h1>
 					</div>
 
-					<div className="card three">
+					<div className="card card-three">
 						<div className="img">
 							<img src={profil} />
 						</div>
@@ -48,7 +46,7 @@ export default class Maeliss extends Component {
 							ensemble vers<br /> l'avenir
 						</p>
 					</div>
-					<div className="card two">
+					<div className="card card-two">
 						<div className="img">
 							<img src={profil} />
 						</div>
@@ -66,7 +64,77 @@ export default class Maeliss extends Component {
 					</div>
 				</section>
 
-				<section className="part-two" />
+				<section className="part-two">
+					<div className="table">
+						<span />
+						<span />
+						<span />
+						<span />
+						<span />
+						<span />
+						<span />
+						<span />
+						<span />
+						<span />
+						<span />
+						<span />
+						<span />
+						<span />
+						<span />
+						<span />
+						<span />
+						<span />
+						<span />
+						<span />
+						<span />
+						<span />
+						<span />
+						<span />
+						<span />
+					</div>
+					<div className="table">
+						<span />
+						<span />
+						<span />
+						<span />
+						<span />
+						<span />
+						<span />
+						<span />
+						<span />
+						<span />
+						<span />
+						<span />
+						<span />
+						<span />
+						<span />
+						<span />
+						<span />
+						<span />
+						<span />
+						<span />
+						<span />
+						<span />
+						<span />
+						<span />
+						<span />
+					</div>
+
+					<div className="">
+						<div className="content content-one">
+							<div>
+								<p>
+									Maêliss, c’est la joie de vivre alliée à l’audace ; du sérieux couplé à des rires
+									(beaucoup de rires) ; un esprit de leader qui n’abandonnera personne en cours de
+									route. Maëliss commença avec une formation de pompière volontaire; elle est
+									aujourd’hui cheffe scout; pourquoi pas maire de notre ville demain ? Altruiste,
+									dynamique, drôle… Tant d’adjectifs pourraient servir sa cause.
+								</p>
+							</div>
+							<div />
+						</div>
+					</div>
+				</section>
 			</div>
 		);
 	}

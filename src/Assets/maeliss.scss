@@ -55,6 +55,7 @@
         padding: 0.5em 1em;
         font-size: 25px;
         background-color: white;
+        color: #241F1F;
         text-align: center;
         text-transform: uppercase;
         font-weight: 800;
@@ -112,10 +113,15 @@
             height: 100%;
         }
 
-        p {
-            background: none;
+        h1 {
+            position: absolute;
+            padding: 0.5em 1em;
+            text-align: center;
+            text-transform: uppercase;
+            font-weight: 800;
             text-align: left;
             font-size: 65px;
+            color: #241F1F;
 
             span {
                 font-size: 25px;
@@ -162,13 +168,13 @@
             bottom: 20px;
         }
 
-        &.two {
+        &-two {
             top: 9vh;
             right: 15%;
             transform: rotate(8deg);
         }
 
-        &.three {
+        &-three {
             top: 8vh;
             right: 11%;
             transform: rotate(16deg);
@@ -177,6 +183,27 @@
 }
 
 .part-two {
-    background-color: black;
-    height: 100vh;
+    height: 65vh;
+
+    .table {
+        height: 4vw;
+        display: flex;
+        flex-wrap: wrap;
+
+        span {
+            flex: 1;
+            border: 2px solid black;
+        }
+    }
+
+    .container {
+        flex: 1;
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+    }
 }

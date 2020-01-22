@@ -50,6 +50,7 @@
   padding: 0.5em 1em;
   font-size: 25px;
   background-color: white;
+  color: #241F1F;
   text-align: center;
   text-transform: uppercase;
   font-weight: 800;
@@ -99,18 +100,23 @@
 .part-one .buble img {
   height: 100%;
 }
-.part-one .buble p {
-  background: none;
+.part-one .buble h1 {
+  position: absolute;
+  padding: 0.5em 1em;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 800;
   text-align: left;
   font-size: 65px;
+  color: #241F1F;
 }
-.part-one .buble p span {
+.part-one .buble h1 span {
   font-size: 25px;
   display: flex;
   align-items: center;
   text-transform: none;
 }
-.part-one .buble p span div {
+.part-one .buble h1 span div {
   height: 4px;
   width: 40px;
   background-color: black;
@@ -142,20 +148,37 @@
   background: none;
   bottom: 20px;
 }
-.part-one .card.two {
+.part-one .card-two {
   top: 9vh;
   right: 15%;
   transform: rotate(8deg);
 }
-.part-one .card.three {
+.part-one .card-three {
   top: 8vh;
   right: 11%;
   transform: rotate(16deg);
 }
 
 .part-two {
-  background-color: black;
-  height: 100vh;
+  height: 65vh;
+}
+.part-two .table {
+  height: 4vw;
+  display: flex;
+  flex-wrap: wrap;
+}
+.part-two .table span {
+  flex: 1;
+  border: 2px solid black;
+}
+.part-two .container {
+  flex: 1;
+}
+.part-two .container .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 /*# sourceMappingURL=maeliss.css.map */
