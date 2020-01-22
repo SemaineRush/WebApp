@@ -1,4 +1,7 @@
 import React from 'react';
+
+import './App.css';
+import Home from './Components/Home'
 import Header from './Components/Header';
 import Vote from './Components/Vote';
 import Sign from './Components/Sign'
@@ -13,10 +16,10 @@ function App() {
         <div className="App">
           <Route exact path="/sign" component={ Sign } />
           <Route exact path="/vote" component={ Vote } />
+          <Route exact path="/home" component={ Home } />
         </div>
       </Router>
     </>
-
   );
 }
 
