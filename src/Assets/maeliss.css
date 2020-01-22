@@ -160,6 +160,8 @@
 }
 
 .part-two {
+  display: flex;
+  flex-direction: column;
   height: 65vh;
 }
 .part-two .table {
@@ -172,6 +174,7 @@
   border: 2px solid black;
 }
 .part-two .container {
+  display: flex;
   flex: 1;
 }
 .part-two .container .content {
@@ -179,6 +182,13 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+.part-two .container .content-one {
+  flex: 1;
+}
+.part-two .container .content-two {
+  height: 100%;
+  width: 35%;
 }
 
 /*# sourceMappingURL=maeliss.css.map */

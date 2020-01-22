@@ -120,7 +120,7 @@ export default class Maeliss extends Component {
 						<span />
 					</div>
 
-					<div className="">
+					<div className="container">
 						<div className="content content-one">
 							<div>
 								<p>
@@ -132,6 +132,9 @@ export default class Maeliss extends Component {
 								</p>
 							</div>
 							<div />
+						</div>
+						<div className="content content-one">
+							<button />
 						</div>
 					</div>
 				</section>

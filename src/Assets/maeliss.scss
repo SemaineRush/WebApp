@@ -183,6 +183,8 @@
 }
 
 .part-two {
+    display: flex;
+    flex-direction: column;
     height: 65vh;
 
     .table {
@@ -197,6 +199,7 @@
     }
 
     .container {
+        display: flex;
         flex: 1;
 
         .content {
@@ -204,6 +207,15 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
+
+            &-one {
+                flex: 1;
+            }
+
+            &-two {
+                height: 100%;
+                width: 35%;
+            }
         }
     }
 }
