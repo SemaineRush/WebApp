@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import '../Assets/vote-list.css'
+import '../Assets/vote.css'
 import avatar from '../Assets/media/avatar.png';
 import lock from '../Assets/media/lock.png';
 import people from '../Assets/media/people.png'

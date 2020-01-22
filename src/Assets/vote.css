@@ -1,50 +1,46 @@
 .red {
-    height: 200px;
-    width: 500px;
+    height: 50vh;
+    width: 95vh;
     background: #FD475E;
     border-radius: 50%;
     transform: rotate(-50deg);
-    z-index: -999;
+    z-index: -1;
     position: absolute;
-    top: -50px;
-    left: -200px;
+    bottom: 62vh;
+    left: -45vh;
 }
 
 .yellow {
-    height: 50%;
-    width: 650px;
+    height: 200vh;
+    width: 165vh;
     background: #FFD02A;
     border-radius: 50%;
-    transform: rotate(60deg);
-    z-index: -999;
+    z-index: -1;
     position: absolute;
-    top: 55%;
-    left: -250px;
+    top: 35vh;
+    left: -100vh;
 }
 
 .violet {
-    height: 200px;
-    width: 500px;
+    height: 100vh;
+    width: 100vh;
     background: #5F63D4;
     border-radius: 50%;
-    transform: rotate(-40deg);
-    z-index: -998;
+    z-index: -1;
     position: absolute;
-    bottom: -50px;
-    right: -220px;
+    bottom: -65vh;
+    right: -65vh;
 }
 
 .light-violet {
-    height: 200px;
-    width: 500px;
+    height: 100vh;
+    width: 50vh;
     background: #8388FF;
     border-radius: 50%;
-    transform: rotate(-70deg);
-    z-index: -999;
+    z-index: -2;
     position: absolute;
-    bottom: -30px;
-    right: -230px;
-    z-index: -999;
+    bottom: -50vh;
+    right: -30vh;
 }
 
 .container {
@@ -71,14 +67,14 @@ h1 {
 }
 
 .vote-list {
-    width: 1100px;
+    width: 85%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .candidate {
-    height: 300px;
-    width: 250px;
+    height: 40vh;
+    width: 22%;
     border-radius: 33px;
 }
 
@@ -96,10 +92,7 @@ h1 {
 }
 
 .img-candidate img {
-    height: 100%;
     width: 100%;
-    border-top-left-radius: 33px;
-    border-top-right-radius: 33px;
 }
 
 .description {
@@ -126,20 +119,21 @@ input[type="radio"] {
 }
 
 .candidate-button {
-    height: 15px;
-    width: 15px;
+    height: 17px;
+    width: 17px;
     border-radius: 5px;
     position: relative;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .candidate-button::after {
     content: "";
-    height: 17px;
-    width: 17px;
+    height: 20px;
+    width: 20px;
     position: absolute;
-    top: -2px;
-    left: -2px;
     border: 1px solid #2C2C54;
     border-radius: 5px;
 }
@@ -153,7 +147,7 @@ input[type="radio"]:checked~.candidate-button {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 30px;
+    margin-top: 50px;
 }
 
 .content p {
@@ -162,11 +156,18 @@ input[type="radio"]:checked~.candidate-button {
 
 .vote-button {
     background: #5F63D4;
+    transition: 0.1s ease;
     color: #fff;
     text-transform: capitalize;
     width: 350px;
     padding: 7px 10px 7px 10px;
-    font-size: 22px;
+    font-size: 22pt;
     border-radius: 100px;
-    margin-top: 10px;
+    margin-top: 20px;
+    border: none;
+}
+
+.vote-button:hover {
+    cursor: pointer;
+    background: #797ce0;
 }
