@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import '../Assets/vote-list.css'
+import '../Assets/vote.css'
 import Header from "./Header"
 
 import VoteList from './VoteList';
