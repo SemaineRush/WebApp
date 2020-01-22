@@ -8,8 +8,7 @@ import {BrowserRouter as Router, Route} from 'react-router-dom';
 function App() {
   return (
     <>
-      <Header />
-
+      <Header/>
       <Router>
         <div className="App">
           <Route exact path="/sign" component={ Sign } />
