@@ -7,8 +7,7 @@ import VoteList from './VoteList';
 export default class Vote extends Component {
     render() {
         return (
-          <div>
-            <Header></Header>
+            <Header />
             <div className="container">
               
               <div className="red"></div>
@@ -22,7 +21,6 @@ export default class Vote extends Component {
               </div>
 
               <VoteList />
-            </div>
             </div>
         )
     }
