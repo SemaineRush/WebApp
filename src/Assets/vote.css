@@ -143,14 +143,14 @@ input[type="radio"]:checked~.candidate-button {
     background: #2C2C54;
 }
 
-.content {
+.voteBottomContent {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 50px;
 }
 
-.content p {
+.voteBottomContent p {
     font-weight: 200;
 }
 
