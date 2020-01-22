@@ -1,5 +1,4 @@
 import React from 'react';
-import Header from './Components/Header';
 import Vote from './Components/Vote';
 import Sign from './Components/Sign'
 import {BrowserRouter as Router, Route} from 'react-router-dom';

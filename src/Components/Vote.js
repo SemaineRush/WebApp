@@ -1,11 +1,14 @@
 import React, { Component } from 'react'
-import '../Assets/vote-list.css'
+import '../Assets/vote-list.css';
+import Header from './Components/Header';
+
 
 import VoteList from './VoteList';
 
 export default class Vote extends Component {
     render() {
         return (
+            <Header />
             <div className="container">
               <div className="red"></div>
               <div className="yellow"></div>
