@@ -1,12 +1,16 @@
 import React, { Component } from 'react'
 import '../Assets/vote-list.css'
+import Header from "./Header"
 
 import VoteList from './VoteList';
 
 export default class LogIn extends Component {
     render() {
         return (
+          <div>
+            <Header></Header>
             <div className="container">
+              
               <div className="red"></div>
               <div className="yellow"></div>
               
@@ -16,6 +20,7 @@ export default class LogIn extends Component {
               </div>
 
               <VoteList />
+            </div>
             </div>
         )
     }
