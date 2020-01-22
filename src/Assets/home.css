@@ -1,5 +1,5 @@
-.home{
-    height: 91.5vh;
+.home {
+    height: 93vh;
     overflow: hidden;
     display: grid;
     grid-template-columns: 0.7fr 1fr 1fr 1fr 0.7fr;
@@ -7,7 +7,7 @@
     position: relative;
 }
 
-.top_left_yellow{
+.top_left_yellow {
     background-color: #FFD02A;
     position: absolute;
     width: 1500px;
@@ -18,7 +18,7 @@
     z-index: -1;
 }
 
-.bottom_left_pink{
+.bottom_left_pink {
     background-color: #FD475E;
     position: absolute;
     width: 1500px;
@@ -28,7 +28,7 @@
     left: -1250px;
 }
 
-.bottom_right_purple{
+.bottom_right_purple {
     background-color: #8388FF;
     position: absolute;
     width: 1500px;
@@ -37,7 +37,8 @@
     bottom: -850px;
     right: -1350px;
 }
-.bottom_right_blue{
+
+.bottom_right_blue {
     background-color: #5F63D4;
     position: absolute;
     width: 1500px;
@@ -48,32 +49,33 @@
     z-index: -1;
 }
 
-.yellow_top h2{
+.yellow_top h2 {
     text-align: left;
     color: #FFF;
     margin-left: 1em;
+    margin-top: 1em;
 }
 
-.yellow_top h4{
+.yellow_top h4 {
     color: #FFF;
     text-align: left;
-    margin-left: 1.5em;
+    margin-left: 1.3em;
 }
 
-.candidates{
+.candidates {
     display: flex;
     grid-column-start: 2;
     grid-column-end: 5;
     grid-row-start: 2;
 }
 
-.candidat{
+.candidat {
     margin-left: 20px;
     margin-right: 20px;
     position: relative;
 }
 
-.candidat_img{
+.candidat_img {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -88,16 +90,16 @@
     z-index: 10;
 }
 
-.candidat_img img{
+.candidat_img img {
     top: 0;
     position: absolute;
     height: 100%;
 }
 
-.candidat_info{
+.candidat_info {
     position: relative;
     top: 30%;
-    box-shadow: 0px 0px 11px 0px rgba(217,217,217,1);
+    box-shadow: 0px 0px 11px 0px rgba(217, 217, 217, 1);
     background-color: #FFF;
     padding-top: 60%;
     padding-right: 5%;
@@ -105,14 +107,14 @@
     padding-bottom: 10%;
 }
 
-.vote_btn{
+.vote_btn {
     grid-column-start: 3;
     grid-row-start: 3;
 }
 
-.vote_btn button{
+.vote_btn button {
     background-color: #5F63D4;
-    color: #FFF ;
+    color: #FFF;
     font-weight: bold;
     font-size: 20px;
     padding: 10px 35%;
@@ -162,4 +164,3 @@
     margin-top: 5%;
 
 }  */
-
