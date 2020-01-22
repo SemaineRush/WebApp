@@ -156,6 +156,7 @@ input[type="radio"]:checked~.candidate-button {
 
 .vote-button {
     background: #5F63D4;
+    transition: 0.1s ease;
     color: #fff;
     text-transform: capitalize;
     width: 350px;
@@ -164,4 +165,9 @@ input[type="radio"]:checked~.candidate-button {
     border-radius: 100px;
     margin-top: 20px;
     border: none;
+}
+
+.vote-button:hover {
+    cursor: pointer;
+    background: #797ce0;
 }
