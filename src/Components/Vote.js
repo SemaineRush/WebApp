@@ -4,7 +4,7 @@ import Header from "./Header"
 
 import VoteList from './VoteList';
 
-export default class LogIn extends Component {
+export default class Vote extends Component {
     render() {
         return (
           <div>
@@ -13,6 +13,8 @@ export default class LogIn extends Component {
               
               <div className="red"></div>
               <div className="yellow"></div>
+              <div className="violet"></div>
+              <div className="light-violet"></div>
               
               <div className="title">
                 <h1>À votre vote</h1>

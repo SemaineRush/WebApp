@@ -22,6 +22,31 @@
     left: -250px;
 }
 
+.violet {
+    height: 200px;
+    width: 500px;
+    background: #5F63D4;
+    border-radius: 50%;
+    transform: rotate(-40deg);
+    z-index: -998;
+    position: absolute;
+    bottom: -50px;
+    right: -220px;
+}
+
+.light-violet {
+    height: 200px;
+    width: 500px;
+    background: #8388FF;
+    border-radius: 50%;
+    transform: rotate(-70deg);
+    z-index: -999;
+    position: absolute;
+    bottom: -30px;
+    right: -230px;
+    z-index: -999;
+}
+
 .container {
     height: 91.5vh;
     width: 100vw;
@@ -37,7 +62,7 @@
     flex-direction: column;
     align-items: center;
     margin-top: 40px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 
 h1 {
@@ -46,7 +71,7 @@ h1 {
 }
 
 .vote-list {
-    width: 75%;
+    width: 1100px;
     display: flex;
     justify-content: space-around;
 }
@@ -54,8 +79,14 @@ h1 {
 .candidate {
     height: 300px;
     width: 250px;
-    background: red;
     border-radius: 33px;
+}
+
+.candidate:last-child .img-candidate {
+    border: 1px solid #000;
+    border-bottom: none;
+    border-top-left-radius: 33px;
+    border-top-right-radius: 33px;
 }
 
 .img-candidate {
@@ -69,7 +100,6 @@ h1 {
     width: 100%;
     border-top-left-radius: 33px;
     border-top-right-radius: 33px;
-    position: absolute;
 }
 
 .description {
@@ -83,8 +113,60 @@ h1 {
     align-items: center;
     padding-left: 20px;
     padding-right: 20px;
+    color: #2C2C54;
+    font-weight: 600;
 }
 
 .description p span {
     text-transform: uppercase;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.candidate-button {
+    height: 15px;
+    width: 15px;
+    border-radius: 5px;
+    position: relative;
+    cursor: pointer;
+}
+
+.candidate-button::after {
+    content: "";
+    height: 17px;
+    width: 17px;
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    border: 1px solid #2C2C54;
+    border-radius: 5px;
+}
+
+
+input[type="radio"]:checked ~ .candidate-button {
+    background: #2C2C54;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.content p {
+    font-weight: 200;
+}
+
+.vote-button {
+    background: #5F63D4;
+    color: #fff;
+    text-transform: capitalize;
+    width: 350px;
+    padding: 7px 10px 7px 10px;
+    font-size: 22px;
+    border-radius: 100px;
+    margin-top: 10px;
 }
