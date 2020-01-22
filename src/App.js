@@ -11,7 +11,7 @@ function App() {
     <>
       <Router>
         <div className="App">
-          <Route exact path="/sign" component={ Sign } />
+          <Route exact path="/" component={ Sign } />
           <Route exact path="/vote" component={ Vote } />
           <Route exact path="/home" component={ Home } />
         </div>

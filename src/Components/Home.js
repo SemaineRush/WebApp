@@ -20,11 +20,11 @@ export default class Home extends Component {
 
 							<div className="candidat_info">
 								<h3>Arevichan ARUDCHELVAN</h3>
-								<span>
+								<p>
 									As promised, here's a relaxing Breath of the Wild songs mix with a calm night
 									ambience in the background. Note that I manually edited some of the songs to keep
 									only the relaxing bits. I think you guys are gonna love this one!
-								</span>
+								</p>
 							</div>
 						</div>
 
@@ -35,11 +35,11 @@ export default class Home extends Component {
 
 							<div className="candidat_info">
 								<h3>Arevichan ARUDCHELVAN</h3>
-								<span>
+								<p>
 									As promised, here's a relaxing Breath of the Wild songs mix with a calm night
 									ambience in the background. Note that I manually edited some of the songs to keep
 									only the relaxing bits. I think you guys are gonna love this one!
-								</span>
+								</p>
 							</div>
 						</div>
 
@@ -50,11 +50,11 @@ export default class Home extends Component {
 
 							<div className="candidat_info">
 								<h3>Arevichan ARUDCHELVAN</h3>
-								<span>
+								<p>
 									As promised, here's a relaxing Breath of the Wild songs mix with a calm night
 									ambience in the background. Note that I manually edited some of the songs to keep
 									only the relaxing bits. I think you guys are gonna love this one!
-								</span>
+								</p>
 							</div>
 						</div>
 					</div>
