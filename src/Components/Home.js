@@ -15,7 +15,7 @@ export default class Home extends Component {
 					<div className="candidates">
 						<div className="candidat">
 							<div className="candidat_img">
-								<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBR3ALwgoYztClBjDqkLgX3cSoiC9iYyZFYsOURVXl_Yw3R-fO&s" />
+								<img alt="d" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBR3ALwgoYztClBjDqkLgX3cSoiC9iYyZFYsOURVXl_Yw3R-fO&s" />
 							</div>
 
 							<div className="candidat_info">
@@ -30,7 +30,7 @@ export default class Home extends Component {
 
 						<div className="candidat">
 							<div className="candidat_img">
-								<img src="https://a-static.besthdwallpaper.com/one-piece-sanji-wano-kuni-arc-wallpaper-14833_L.jpg" />
+								<img alt="d" src="https://a-static.besthdwallpaper.com/one-piece-sanji-wano-kuni-arc-wallpaper-14833_L.jpg" />
 							</div>
 
 							<div className="candidat_info">
@@ -45,7 +45,7 @@ export default class Home extends Component {
 
 						<div className="candidat">
 							<div className="candidat_img">
-								<img src="https://i.ytimg.com/vi/_i-chBlsXBE/maxresdefault.jpg" />
+								<img  alt="d" src="https://i.ytimg.com/vi/_i-chBlsXBE/maxresdefault.jpg" />
 							</div>
 
 							<div className="candidat_info">
