@@ -131,9 +131,12 @@ export default class Maeliss extends Component {
 									dynamique, drôle… Tant d’adjectifs pourraient servir sa cause.
 								</p>
 							</div>
-							<div />
+							<div>
+								<p>Ne réfléchissez plus :</p>
+								<h3>Votez maëliss pour que sup’ s’agrandisse</h3>
+							</div>
 						</div>
-						<div className="content content-one">
+						<div className="content content-two">
 							<button />
 						</div>
 					</div>
