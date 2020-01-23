@@ -358,4 +358,55 @@
   height: 40vh;
 }
 
+.part-six {
+  position: fixed;
+  bottom: 0;
+  height: 9vh;
+  width: 100vw;
+  background-color: #FF75B8;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  border: 3px solid #261F1F;
+  z-index: 99;
+}
+.part-six div {
+  position: relative;
+  height: 100%;
+  width: 24%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-evenly;
+}
+.part-six div img {
+  height: 85%;
+}
+.part-six div button {
+  transition: 0.2s ease;
+  height: 70%;
+  width: 95%;
+  text-transform: uppercase;
+  font-size: 30px;
+  background-color: white;
+  border: 2px solid #261F1F;
+  z-index: 1;
+}
+.part-six div button:hover {
+  cursor: pointer;
+  margin: 10px 0 0 10px;
+}
+.part-six div span {
+  position: absolute;
+  height: 70%;
+  width: 95%;
+  margin: 10px 0 0 10px;
+  background-color: #261F1F;
+  z-index: 0;
+}
+.part-six div:nth-of-type(2) {
+  width: 35%;
+  align-items: center;
+  justify-content: center;
+}
+
 /*# sourceMappingURL=maeliss.css.map */

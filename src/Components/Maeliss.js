@@ -12,6 +12,7 @@ import enveloppe from '../Assets/media/maeliss/enveloppe.svg';
 import waveTwo from '../Assets/media/maeliss/vague-deux.svg';
 import arrowThree from '../Assets/media/maeliss/fleche-eclat-gauche.svg';
 import arrowFour from '../Assets/media/maeliss/fleche-eclat-droite.svg';
+import mouth from '../Assets/media/maeliss/icon-bouche.svg';
 
 export default class Maeliss extends Component {
 	render() {
@@ -208,6 +209,22 @@ export default class Maeliss extends Component {
 					<img src={arrowFour} />
 				</section>
 				<section className="part-five">e</section>
+				<section className="part-six">
+					<div>
+						<img src={mouth} />
+						<img src={mouth} />
+						<img src={mouth} />
+					</div>
+					<div>
+						<button>votez !</button>
+						<span />
+					</div>
+					<div>
+						<img src={mouth} />
+						<img src={mouth} />
+						<img src={mouth} />
+					</div>
+				</section>
 			</div>
 		);
 	}
