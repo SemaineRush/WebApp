@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import '../Assets/home.css';
 import Header from './Header';
 
@@ -19,7 +20,8 @@ export default class Home extends Component {
 							</div>
 
 							<div className="candidat_info">
-								<h3>Arevichan ARUDCHELVAN</h3>
+
+              <Link to="/home/arevichan"><h3>Arevichan ARUDCHELVAN</h3></Link>
 								<p>
 									As promised, here's a relaxing Breath of the Wild songs mix with a calm night
 									ambience in the background. Note that I manually edited some of the songs to keep
@@ -27,21 +29,23 @@ export default class Home extends Component {
 								</p>
 							</div>
 						</div>
+                        
+                        
+            <div className="candidat">
+                <div className="candidat_img">
+                    <img src="https://a-static.besthdwallpaper.com/one-piece-sanji-wano-kuni-arc-wallpaper-14833_L.jpg" />
+                </div>
+                <div className="candidat_info">
+                <Link to="/home/maeliss"><h3>Maeliss TARAUD</h3></Link>
+                    <p>
+                        As promised, here's a relaxing Breath of the Wild songs mix with a calm night
+                        ambience in the background. Note that I manually edited some of the songs to keep
+                        only the relaxing bits. I think you guys are gonna love this one!
+                    </p>
+                </div>
+            </div>
 
-						<div className="candidat">
-							<div className="candidat_img">
-								<img alt="d" src="https://a-static.besthdwallpaper.com/one-piece-sanji-wano-kuni-arc-wallpaper-14833_L.jpg" />
-							</div>
-
-							<div className="candidat_info">
-								<h3>Arevichan ARUDCHELVAN</h3>
-								<p>
-									As promised, here's a relaxing Breath of the Wild songs mix with a calm night
-									ambience in the background. Note that I manually edited some of the songs to keep
-									only the relaxing bits. I think you guys are gonna love this one!
-								</p>
-							</div>
-						</div>
+                        
 
 						<div className="candidat">
 							<div className="candidat_img">
@@ -49,8 +53,8 @@ export default class Home extends Component {
 							</div>
 
 							<div className="candidat_info">
-								<h3>Arevichan ARUDCHELVAN</h3>
-								<p>
+                <Link to="/home/guiral"><h3>Guiral LAPOUGE</h3></Link>
+                <p>
 									As promised, here's a relaxing Breath of the Wild songs mix with a calm night
 									ambience in the background. Note that I manually edited some of the songs to keep
 									only the relaxing bits. I think you guys are gonna love this one!
@@ -60,7 +64,7 @@ export default class Home extends Component {
 					</div>
 
 					<div className="vote_btn">
-						<button>Voter</button>
+						<Link to="/vote"><button>Voter</button></Link>
 					</div>
 
 					<div className="top_left_yellow" />

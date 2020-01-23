@@ -1,0 +1,224 @@
+.guiral_home{
+    display: grid;
+    grid-template-rows: 2.2fr 1fr 0.5fr 1.2fr 1fr;
+}
+
+.programme_pt1{
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    background-color: #4237CA;
+    min-height: 100vh;
+}
+
+
+.left_pt{
+    position: relative;
+}
+
+.left_pt h1{
+    color: #FFF;
+    font-size: 56px;
+    position: absolute;
+    bottom: 0;
+    left: 30%;
+}
+
+.left_pt img{
+    position: absolute;
+    left: 0;
+    height: 100%;
+    z-index: 2;
+}
+
+.right_pt{
+    display: grid;
+    grid-template-rows: 0.15fr 1fr;
+}
+
+.right_pt .programme{
+    background-color: #161154;
+    position: relative;
+}
+
+.right_pt .programme img{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.right_pt .programme p{
+    color: #fff;
+    max-width: 500px;
+    text-align: start;
+    padding-bottom: 30px;
+    padding-left: 61px;
+}
+
+.right_pt .programme h2{
+    color: #fff;
+    text-align: left;
+    margin-left: 61px;
+    margin-top: 13%;
+    font-size: 40px;
+    padding-bottom: 8%;
+
+}
+
+.programme_pt2{
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+}
+
+.programme_pt2 .pt2_left{
+    background-color: #E5E5E5;
+}
+.programme_pt2 .pt2_left h3{
+    text-align: left;
+    margin-left: 20%;
+    margin-top: 5%;
+    color: #161154;
+    font-size: 33px;
+}
+
+.programme_pt2 .pt2_left p{
+    color: #161154;
+    text-align: start;
+    max-width: 700px;
+    margin-left: 20%;
+    padding-top: 5%;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.programme_pt2 .pt2_right{
+    background-color: #E24B4F;
+    position: relative;
+}
+
+.programme_pt2 .pt2_right h1{
+    position: absolute;
+    bottom: 0;
+    text-align: left;
+    left: 10%;
+    color: #FFF;
+    font-size: 50px;
+}
+
+.chronology{
+    background-color: #161154;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    overflow: hidden;
+}
+
+.p2020_1{
+    position: absolute;
+    left: 10%;
+    z-index: 0;
+}
+
+.p2020_1 img{
+    padding-right: 20px;
+}
+
+.p2020_2{
+    position: absolute;
+    right: 25%;
+    z-index: 0;
+}
+
+.p2020_2 img{
+    padding-right: 20px;
+    height: 100%;
+}
+
+.chronology h4{
+    font-size: 20px;
+    color: #fff;
+    font-style: normal;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+.chronology .arrow_month{
+    padding-top: 1.2%;
+    z-index: 1;
+}
+
+.chronology .arrow{
+    padding-bottom: 1%;
+    padding-right: 30px;
+}
+
+.actuality{
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    background-color: #E5E5E5;
+
+}
+
+.actuality .feed{
+    background: #E5E5E5;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    justify-content: space-around;
+}
+
+.actuality .feed h3{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 44px;
+    color: #161154;
+
+    text-align: start;
+
+}
+
+.actuality .article{
+    display: flex;
+}
+
+.actuality .article .article_content{
+    text-align: start;
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.actuality .article .article_content h4{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 44px;
+}
+
+
+.actuality .article .article_content p{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: rgba(22, 17, 84, 0.4);
+}
+
+.actuality .article img{
+    height: 100px;
+    width: auto;
+}
+
+.actuality .map{
+    width: 100%;
+    height: 100%;
+}
+
+.media{
+    background-color:  #4237CA;
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+}
+
