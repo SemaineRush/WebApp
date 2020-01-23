@@ -145,6 +145,7 @@ export default class Maeliss extends Component {
 							</div>
 						</div>
 						<div className="content content-two">
+							<span />
 							<button>
 								<h3>fast & curious</h3>
 								<p>de Maëliss</p>
