@@ -137,8 +137,11 @@
         }
 
         p {
+            position: absolute;
             background: none;
-            margin-top: 1.5em;
+            top: 70%;
+            left: 50%;
+            transform: translate(-50%, -50%);
         }
     }
 

@@ -125,8 +125,11 @@
   height: 100%;
 }
 .part-one .envelope p {
+  position: absolute;
   background: none;
-  margin-top: 1.5em;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .part-one .buble {
   position: absolute;
