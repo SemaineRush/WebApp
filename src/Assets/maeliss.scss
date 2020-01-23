@@ -10,6 +10,17 @@
     font-family: 'Roboto Mono', monospace;
 }
 
+.squares {
+    height: 4vw;
+    display: flex;
+    flex-wrap: wrap;
+
+    span {
+        flex: 1;
+        border: 2px solid black;
+    }
+}
+
 .part-one {
     position: relative;
     height: 98vh;
@@ -242,17 +253,6 @@
         color: #261F1F;
     }
 
-    .table {
-        height: 4vw;
-        display: flex;
-        flex-wrap: wrap;
-
-        span {
-            flex: 1;
-            border: 2px solid black;
-        }
-    }
-
     .container {
         display: flex;
         flex: 1;
@@ -359,6 +359,7 @@
                     width: 70%;
                     background: linear-gradient(45deg, #02FF80 5%, #81FFC0 5%, #81FFC0 15%, #02FF80 15%, #02FF80 25%, #81FFC0 25%, #81FFC0 35%, #02FF80 35%, #02FF80 45%, #81FFC0 45%, #81FFC0 55%, #02FF80 55%, #02FF80 65%, #81FFC0 65%, #81FFC0 75%, #02FF80 75%, #02FF80 85%, #81FFC0 85%, #81FFC0 95%, #02FF80 95%, #02FF80);
                     z-index: 1;
+                    border: none;
 
                     h3 {
                         text-transform: uppercase;
@@ -486,7 +487,6 @@
 }
 
 .part-four {
-    border-top: 1px solid black;
     position: relative;
     background-color: #F9F7E7;
     height: 50vh;
