@@ -13,9 +13,9 @@ export default class LogIn extends Component {
                     </div>
                     <div className="form_line login">
                         <h3>MOT DE PASSE</h3>
-                        <input placeholder="" className="form_input" type="password" />
+                        <input placeholder="" className="form_input" type="password" /> <br/>
+                        <a href="/" className="forgot_password">Mot de passe oublié ?</a>
                     </div>
-                    <span><a href="/" className="forgot_password">Mot de passe oublié ?</a></span>
                     <button className="form_button" type="submit">Connexion</button>
                     <div className="link_account">
                         <a href="/" className="already_account">Vous avez déjà un compte ?</a> <br/>
