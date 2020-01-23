@@ -21,7 +21,6 @@ export default class Maeliss extends Component {
 					<img src={whiteLines} className="white-lines" />
 					<img src={arrowOne} className="arrow-one" />
 					<img src={arrowTwo} className="arrow-two" />
-					<img src={enveloppe} className="envelope" />
 					<img src={paf} className="paf" />
 
 					<p className="p-one">leader de confiance</p>
@@ -29,6 +28,10 @@ export default class Maeliss extends Component {
 					<div className="boom">
 						<img src={bubleOne} />
 						<p>dynamique</p>
+					</div>
+					<div className="envelope">
+						<img src={enveloppe} />
+						<p>votez</p>
 					</div>
 					<div className="buble">
 						<img src={bubleTwo} />

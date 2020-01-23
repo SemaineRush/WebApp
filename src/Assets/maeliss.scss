@@ -33,13 +33,6 @@
         left: 27%;
     }
 
-    .envelope {
-        position: absolute;
-        height: 10vh;
-        top: 35vh;
-        left: 35%;
-    }
-
     .paf {
         position: absolute;
         height: 13vh;
@@ -104,6 +97,25 @@
             position: absolute;
             background: none;
             margin-bottom: 0.5em;
+        }
+    }
+
+    .envelope {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 10vh;
+        top: 35vh;
+        left: 35%;
+
+        img {
+            height: 100%;
+        }
+
+        p {
+            background: none;
+            margin-top: 1.5em;
         }
     }
 

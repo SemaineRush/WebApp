@@ -30,12 +30,6 @@
   top: 37vh;
   left: 27%;
 }
-.part-one .envelope {
-  position: absolute;
-  height: 10vh;
-  top: 35vh;
-  left: 35%;
-}
 .part-one .paf {
   position: absolute;
   height: 13vh;
@@ -93,6 +87,22 @@
   position: absolute;
   background: none;
   margin-bottom: 0.5em;
+}
+.part-one .envelope {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 10vh;
+  top: 35vh;
+  left: 35%;
+}
+.part-one .envelope img {
+  height: 100%;
+}
+.part-one .envelope p {
+  background: none;
+  margin-top: 1.5em;
 }
 .part-one .buble {
   position: absolute;
