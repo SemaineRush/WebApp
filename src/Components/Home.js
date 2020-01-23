@@ -63,7 +63,7 @@ export default class Home extends Component {
 					</div>
 
 					<div className="vote_btn">
-						<button>Voter</button>
+						<Link to="/vote"><button>Voter</button></Link>
 					</div>
 
 					<div className="top_left_yellow" />
