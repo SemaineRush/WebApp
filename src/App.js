@@ -15,7 +15,7 @@ function App() {
           <Route exact path="/" component={ Sign } />
           <Route exact path="/vote" component={ Vote } />
           <Route exact path="/home" component={ Home } />
-          <Route exact path="/vote/guiral" component={ GuiralVote } />
+          <Route exact path="/home/guiral" component={ GuiralVote } />
         </div>
       </Router>
     </>

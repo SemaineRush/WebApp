@@ -20,7 +20,7 @@ export default class Home extends Component {
 							</div>
 
 							<div className="candidat_info">
-                                <Link to="/"><h3>Arevichan ARUDCHELVAN</h3></Link>
+                                <Link to="/home/arevichan"><h3>Arevichan ARUDCHELVAN</h3></Link>
 								<p>
 									As promised, here's a relaxing Breath of the Wild songs mix with a calm night
 									ambience in the background. Note that I manually edited some of the songs to keep
@@ -35,7 +35,7 @@ export default class Home extends Component {
                                 <img src="https://a-static.besthdwallpaper.com/one-piece-sanji-wano-kuni-arc-wallpaper-14833_L.jpg" />
                             </div>
                             <div className="candidat_info">
-                            <Link to="/"><h3>Arevichan ARUDCHELVAN</h3></Link>
+                            <Link to="/home/maeliss"><h3>Maeliss TARAUD</h3></Link>
                                 <p>
                                     As promised, here's a relaxing Breath of the Wild songs mix with a calm night
                                     ambience in the background. Note that I manually edited some of the songs to keep
@@ -52,7 +52,7 @@ export default class Home extends Component {
 							</div>
 
 							<div className="candidat_info">
-                            <Link to="/"><h3>Arevichan ARUDCHELVAN</h3></Link>
+                            <Link to="/home/guiral"><h3>Guiral LAPOUGE</h3></Link>
 								<p>
 									As promised, here's a relaxing Breath of the Wild songs mix with a calm night
 									ambience in the background. Note that I manually edited some of the songs to keep
