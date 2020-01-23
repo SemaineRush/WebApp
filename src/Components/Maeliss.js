@@ -9,6 +9,9 @@ import arrowTwo from '../Assets/media/maeliss/fleche-droite.svg';
 import bubleTwo from '../Assets/media/maeliss/bull-haut.svg';
 import paf from '../Assets/media/maeliss/eclat.svg';
 import enveloppe from '../Assets/media/maeliss/enveloppe.svg';
+import waveTwo from '../Assets/media/maeliss/vague-deux.svg';
+import arrowThree from '../Assets/media/maeliss/fleche-eclat-gauche.svg';
+import arrowFour from '../Assets/media/maeliss/fleche-eclat-droite.svg';
 
 export default class Maeliss extends Component {
 	render() {
@@ -131,7 +134,7 @@ export default class Maeliss extends Component {
 								<p>
 									Maêliss, c’est la joie de vivre alliée à l’audace ; du sérieux couplé à des rires
 									(beaucoup de rires) ; un esprit de leader qui n’abandonnera personne en cours de
-									route. Maëliss commença avec une formation de pompière volontaire; elle est
+									route.<br /> Maëliss commença avec une formation de pompière volontaire; elle est
 									aujourd’hui cheffe scout; pourquoi pas maire de notre ville demain ? Altruiste,
 									dynamique, drôle… Tant d’adjectifs pourraient servir sa cause.
 								</p>
@@ -149,6 +152,61 @@ export default class Maeliss extends Component {
 						</div>
 					</div>
 				</section>
+				<section className="part-three">
+					<h2>son programme·sa vocation</h2>
+					<h3>responsabilité · équité · fraternité</h3>
+					<div className="container">
+						<div className="content content-one">
+							<div>
+								<p>Apporter un accompagnement à chacun en fonction de son besoin.</p>
+							</div>
+							<div>
+								<p>
+									Promouvoir des lieux publics pour que chacun puisse profiter de la ville à sa
+									manière (espace pour le sport, espace détente, lieux en pleine nature)
+								</p>
+							</div>
+							<div>
+								<p>Sensibiliser à l'environnement par des gestes du quotidien.</p>
+							</div>
+						</div>
+						<div className="content content-two">
+							<div>
+								<p>
+									Égalité culturelle, accessibilité tarifaire, ouvert au public, cela permet
+									d'améliorer l'éducation et le savoir à long terme des jeunes.
+								</p>
+							</div>
+							<div>
+								<p>
+									Panneaux solaires locaux permettant d'avoir une consommation plus écologiques et de
+									réduire à terme les coûts des habitants
+								</p>
+							</div>
+						</div>
+						<div className="content content-three">
+							<div>
+								<p>Organiser différents évènements culturels, sportifs, humanitaires.</p>
+							</div>
+							<div>
+								<p>
+									Valoriser l'échange entre voisins pour apprendre à connaître davantage chaque
+									personne.
+								</p>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section className="part-four">
+					<img src={waveTwo} className="wave-two" />
+					<img src={arrowThree} />
+					<div>
+						<h3>Faites le choix</h3>
+						<h2>maëliss</h2>
+					</div>
+					<img src={arrowFour} />
+				</section>
+				<section className="part-five">e</section>
 			</div>
 		);
 	}
