@@ -8,6 +8,7 @@ import bubleOne from '../Assets/media/maeliss/bulle-dynamique.svg';
 import arrowTwo from '../Assets/media/maeliss/fleche-droite.svg';
 import bubleTwo from '../Assets/media/maeliss/bull-haut.svg';
 import paf from '../Assets/media/maeliss/eclat.svg';
+import enveloppe from '../Assets/media/maeliss/enveloppe.svg';
 
 export default class Maeliss extends Component {
 	render() {
@@ -20,6 +21,7 @@ export default class Maeliss extends Component {
 					<img src={whiteLines} className="white-lines" />
 					<img src={arrowOne} className="arrow-one" />
 					<img src={arrowTwo} className="arrow-two" />
+					<img src={enveloppe} className="envelope" />
 					<img src={paf} className="paf" />
 
 					<p className="p-one">leader de confiance</p>
@@ -137,7 +139,10 @@ export default class Maeliss extends Component {
 							</div>
 						</div>
 						<div className="content content-two">
-							<button />
+							<button>
+								<h3>fast & curious</h3>
+								<p>de Maëliss</p>
+							</button>
 						</div>
 					</div>
 				</section>
