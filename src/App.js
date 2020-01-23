@@ -1,4 +1,4 @@
-import React from 'react';
+import React , { Component }  from 'react';
 
 import Home from './Components/Home'
 import Vote from './Components/Vote';
@@ -22,4 +22,3 @@ function App() {
   );
 }
 
-export default App;
