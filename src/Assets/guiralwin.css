@@ -1,3 +1,19 @@
 .guiral-background {
     background-color: #4237CA;
+    height: 60vh;
+}
+
+.guiral-background img {
+
+    display: flex;
+    position: relative;
+    top: 15vh;
+}
+
+h1.guiral-result-text {
+color: white;
+font-style: normal;
+font-weight: bold;
+font-size: 40px;
+line-height: 49px;
 }
