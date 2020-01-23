@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Redirect } from 'react-router-dom';
 import '../Assets/register.css'
 // import {BrowserRouter as Redirect} from 'react-router-dom';
 
@@ -8,17 +9,16 @@ export default class LogIn extends Component {
     constructor(props) {
         super(props);
         this.state = {
-          user: [],
-          email: "",
-          password: ""
+        email: "",
+        password: ""
         };
 
         this.handleSubmit = this.handleSubmit.bind(this);
     }
 
-     handleChange = (e) => {
+    handleChange = (e) => {
         this.setState({[e.target.name]:e.target.value})
-     }
+    }
 
     handleSubmit() {
 
@@ -37,7 +37,7 @@ export default class LogIn extends Component {
         .then(result => {
             console.log(result)
             if (result.token) {
-                // localStorage.setItem('user_info', result.token);
+                localStorage.setItem('token', result.token);
             }
         })
         .catch(error => console.log('error', error));
@@ -45,6 +45,9 @@ export default class LogIn extends Component {
         
     
     render() {
+        if(localStorage.getItem('token')){
+            return  <Redirect to="/home" />
+            }else{
         return (
             <div className="login_container">
                 <span className="sign_account">Vous avez déjà un compte ? Connectez vous.</span>
@@ -80,5 +83,6 @@ export default class LogIn extends Component {
                 </form>
             </div>
         )
+        }
     }
 }

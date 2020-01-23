@@ -21,7 +21,7 @@ export default class Home extends Component {
 
 							<div className="candidat_info">
 
-              <Link to="/home/arevichan"><h3>Arevichan ARUDCHELVAN</h3></Link>
+            <Link to="/home/arevichan"><h3>Arevichan ARUDCHELVAN</h3></Link>
 								<p>
 									As promised, here's a relaxing Breath of the Wild songs mix with a calm night
 									ambience in the background. Note that I manually edited some of the songs to keep
