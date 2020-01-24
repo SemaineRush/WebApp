@@ -13,11 +13,10 @@
 .squares {
   height: 4vw;
   display: flex;
-  flex-wrap: wrap;
 }
 .squares span {
   flex: 1;
-  border: 2px solid black;
+  border: 2px solid #261F1F;
 }
 
 .part-one {
@@ -131,7 +130,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.part-one .buble {
+.part-one .bubble {
   position: absolute;
   display: flex;
   align-items: center;
@@ -140,10 +139,10 @@
   top: 45vh;
   left: 20%;
 }
-.part-one .buble img {
+.part-one .bubble img {
   height: 100%;
 }
-.part-one .buble h1 {
+.part-one .bubble h1 {
   position: absolute;
   text-align: center;
   text-transform: uppercase;
@@ -154,14 +153,14 @@
   font-family: Helvetica, sans-serif;
   margin-top: 0.5em;
 }
-.part-one .buble h1 span {
+.part-one .bubble h1 span {
   font-family: "Roboto Mono", monospace;
   font-size: 25px;
   display: flex;
   align-items: flex-end;
   text-transform: none;
 }
-.part-one .buble h1 span div {
+.part-one .bubble h1 span div {
   height: 4px;
   width: 40px;
   background-color: black;
@@ -169,18 +168,18 @@
   margin: 0 10px 10px 0;
 }
 @media (max-width: 1800px) {
-  .part-one .buble h1 {
+  .part-one .bubble h1 {
     font-size: 55px;
   }
-  .part-one .buble h1 span {
+  .part-one .bubble h1 span {
     font-size: 20px;
   }
 }
 @media (max-width: 1400px) {
-  .part-one .buble h1 {
+  .part-one .bubble h1 {
     font-size: 45px;
   }
-  .part-one .buble h1 span {
+  .part-one .bubble h1 span {
     font-size: 15px;
   }
 }
@@ -315,12 +314,18 @@
   position: absolute;
   height: 50%;
   width: 70%;
-  margin: 15px 0 0 15px;
+  top: 52%;
+  left: 52%;
+  transform: translate(-50%, -50%);
   background-color: #261F1F;
   z-index: 0;
 }
 .part-two .container .content-two button {
+  position: absolute;
   transition: 0.2s ease;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   height: 50%;
   width: 70%;
   background: linear-gradient(45deg, #02FF80 5%, #81FFC0 5%, #81FFC0 15%, #02FF80 15%, #02FF80 25%, #81FFC0 25%, #81FFC0 35%, #02FF80 35%, #02FF80 45%, #81FFC0 45%, #81FFC0 55%, #02FF80 55%, #02FF80 65%, #81FFC0 65%, #81FFC0 75%, #02FF80 75%, #02FF80 85%, #81FFC0 85%, #81FFC0 95%, #02FF80 95%, #02FF80);
@@ -336,7 +341,9 @@
 }
 .part-two .container .content-two button:hover {
   cursor: pointer;
-  margin: 15px 0 0 15px;
+  top: 52%;
+  left: 52%;
+  transform: translate(-50%, -50%);
 }
 @media (max-width: 1800px) {
   .part-two .container .content-two button h3 {
@@ -473,8 +480,193 @@
   }
 }
 
-.part-five {
-  height: 40vh;
+.part-five .middle {
+  display: flex;
+}
+.part-five .middle .squaresColumn {
+  width: 4vw;
+  height: 32vw;
+  display: flex;
+  flex-direction: column;
+}
+.part-five .middle .squaresColumn span {
+  flex: 1;
+  border: 2px solid #261F1F;
+}
+.part-five .middle .bubble {
+  position: absolute;
+  z-index: 1;
+  height: 7vw;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+.part-five .middle .bubble img {
+  height: 100%;
+}
+.part-five .middle .bubble p {
+  position: absolute;
+  font-size: 20px;
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 1.2em;
+}
+.part-five .middle .bubble p span {
+  text-transform: uppercase;
+}
+@media (max-width: 1800px) {
+  .part-five .middle .bubble p {
+    font-size: 17px;
+  }
+}
+@media (max-width: 1600px) {
+  .part-five .middle .bubble p {
+    font-size: 15px;
+  }
+}
+@media (max-width: 1400px) {
+  .part-five .middle .bubble p {
+    font-size: 12px;
+  }
+}
+.part-five .middle .videoContainer {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 32vw;
+  width: 52vw;
+  box-shadow: inset 0px 0px 0px 3px black;
+  background-color: #DCADFF;
+}
+.part-five .middle .videoContainer .bubble {
+  top: -3vw;
+  left: 1vw;
+}
+.part-five .middle .videoContainer .video {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  height: 24vw;
+  width: 80%;
+}
+.part-five .middle .videoContainer .video video {
+  height: 100%;
+}
+.part-five .middle .videoContainer .video button {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: #261F1F;
+  border: none;
+}
+.part-five .middle .socialContainer {
+  position: relative;
+  height: 32vw;
+  width: 20vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: inset 0px 0px 0px 3px black;
+  background-color: #DCADFF;
+}
+.part-five .middle .socialContainer .bubble {
+  top: -3.5vw;
+}
+.part-five .middle .socialContainer .social {
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+.part-five .middle .socialContainer .social img {
+  margin: 15px;
+  width: 5vw;
+}
+@media (max-width: 1800px) {
+  .part-five .middle .socialContainer .social img {
+    margin: 12px;
+  }
+}
+@media (max-width: 1600px) {
+  .part-five .middle .socialContainer .social img {
+    margin: 10px;
+  }
+}
+@media (max-width: 1400px) {
+  .part-five .middle .socialContainer .social img {
+    margin: 8px;
+  }
+}
+.part-five .middle .socialContainer .social p {
+  position: relative;
+  overflow: hidden;
+  color: #261F1F;
+  font-weight: 700;
+  font-size: 23px;
+  border: 2px solid #261F1F;
+  border-radius: 50px;
+  padding: 0.2em 0em;
+  width: 9vw;
+}
+.part-five .middle .socialContainer .social p::before {
+  content: "";
+  position: absolute;
+  z-index: -2;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: white;
+}
+.part-five .middle .socialContainer .social p::after {
+  content: "";
+  transition: 0.2s ease-in-out;
+  position: absolute;
+  z-index: -1;
+  height: 100%;
+  width: 0;
+  top: 0;
+  left: 0;
+  border-radius: 50px;
+}
+.part-five .middle .socialContainer .social p.insta::after {
+  background: radial-gradient(circle at 20% 140%, #fdf497 0%, #fdf497 10%, #fd5949 30%, #d6249f 50%, #285AEB 80%);
+}
+.part-five .middle .socialContainer .social p.snap::after {
+  background: #FFFA54;
+}
+.part-five .middle .socialContainer .social p.twitter::after {
+  background: #5CC5F5;
+}
+.part-five .middle .socialContainer .social p.youtube::after {
+  background: #FA0F17;
+}
+@media (max-width: 1800px) {
+  .part-five .middle .socialContainer .social p {
+    font-size: 20px;
+  }
+}
+@media (max-width: 1600px) {
+  .part-five .middle .socialContainer .social p {
+    font-size: 17px;
+  }
+}
+@media (max-width: 1400px) {
+  .part-five .middle .socialContainer .social p {
+    font-size: 15px;
+  }
+}
+.part-five .middle .socialContainer .social:hover {
+  cursor: pointer;
+}
+.part-five .middle .socialContainer .social:hover p::after {
+  width: 100%;
 }
 
 .part-six {
@@ -501,7 +693,11 @@
   height: 85%;
 }
 .part-six div button {
+  position: absolute;
   transition: 0.2s ease;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   height: 70%;
   width: 95%;
   text-transform: uppercase;
@@ -512,7 +708,9 @@
 }
 .part-six div button:hover {
   cursor: pointer;
-  margin: 10px 0 0 10px;
+  top: 55%;
+  left: 51%;
+  transform: translate(-50%, -50%);
 }
 @media (max-width: 1800px) {
   .part-six div button {
@@ -528,7 +726,9 @@
   position: absolute;
   height: 70%;
   width: 95%;
-  margin: 10px 0 0 10px;
+  top: 55%;
+  left: 51%;
+  transform: translate(-50%, -50%);
   background-color: #261F1F;
   z-index: 0;
 }

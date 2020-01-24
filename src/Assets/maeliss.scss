@@ -13,11 +13,10 @@
 .squares {
     height: 4vw;
     display: flex;
-    flex-wrap: wrap;
 
     span {
         flex: 1;
-        border: 2px solid black;
+        border: 2px solid #261F1F;
     }
 }
 
@@ -145,7 +144,7 @@
         }
     }
 
-    .buble {
+    .bubble {
         position: absolute;
         display: flex;
         align-items: center;
@@ -351,13 +350,19 @@
                     position: absolute;
                     height: 50%;
                     width: 70%;
-                    margin: 15px 0 0 15px;
+                    top: 52%;
+                    left: 52%;
+                    transform: translate(-50%, -50%);
                     background-color: #261F1F;
                     z-index: 0;
                 }
 
                 button {
+                    position: absolute;
                     transition: 0.2s ease;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
                     height: 50%;
                     width: 70%;
                     background: linear-gradient(45deg, #02FF80 5%, #81FFC0 5%, #81FFC0 15%, #02FF80 15%, #02FF80 25%, #81FFC0 25%, #81FFC0 35%, #02FF80 35%, #02FF80 45%, #81FFC0 45%, #81FFC0 55%, #02FF80 55%, #02FF80 65%, #81FFC0 65%, #81FFC0 75%, #02FF80 75%, #02FF80 85%, #81FFC0 85%, #81FFC0 95%, #02FF80 95%, #02FF80);
@@ -375,7 +380,9 @@
 
                     &:hover {
                         cursor: pointer;
-                        margin: 15px 0 0 15px;
+                        top: 52%;
+                        left: 52%;
+                        transform: translate(-50%, -50%);
                     }
 
                     @media (max-width: 1800px) {
@@ -544,7 +551,214 @@
 }
 
 .part-five {
-    height: 40vh;
+    .middle {
+        display: flex;
+
+        .squaresColumn {
+            width: 4vw;
+            height: 32vw;
+            display: flex;
+            flex-direction: column;
+
+            span {
+                flex: 1;
+                border: 2px solid #261F1F;
+            }
+        }
+
+        .bubble {
+            position: absolute;
+            z-index: 1;
+            height: 7vw;
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+
+            img {
+                height: 100%;
+            }
+
+            p {
+                position: absolute;
+                font-size: 20px;
+                font-weight: 700;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                margin-top: 1.2em;
+
+                span {
+                    text-transform: uppercase;
+                }
+
+                @media (max-width: 1800px) {
+                    font-size: 17px;
+                }
+
+                @media (max-width: 1600px) {
+                    font-size: 15px;
+                }
+
+                @media (max-width: 1400px) {
+                    font-size: 12px;
+                }
+            }
+        }
+
+        .videoContainer {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 32vw;
+            width: 52vw;
+            box-shadow: inset 0px 0px 0px 3px rgba(0, 0, 0, 1);
+            background-color: #DCADFF;
+
+            .bubble {
+                top: -3vw;
+                left: 1vw;
+            }
+
+            .video {
+                position: absolute;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                z-index: 1;
+                height: 24vw;
+                width: 80%;
+
+                video {
+                    height: 100%;
+                }
+
+                button {
+                    position: absolute;
+                    height: 100%;
+                    width: 100%;
+                    background-color: #261F1F;
+                    border: none;
+                }
+            }
+        }
+
+        .socialContainer {
+            position: relative;
+            height: 32vw;
+            width: 20vw;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            box-shadow: inset 0px 0px 0px 3px rgba(0, 0, 0, 1);
+            background-color: #DCADFF;
+
+            .bubble {
+                top: -3.5vw;
+            }
+
+            .social {
+                z-index: 2;
+                display: flex;
+                align-items: center;
+                text-decoration: none;
+
+                img {
+                    margin: 15px;
+                    width: 5vw;
+
+                    @media (max-width: 1800px) {
+                        margin: 12px;
+
+                    }
+
+                    @media (max-width: 1600px) {
+                        margin: 10px;
+
+                    }
+
+                    @media (max-width: 1400px) {
+                        margin: 8px;
+
+                    }
+                }
+
+                p {
+                    position: relative;
+                    overflow: hidden;
+                    color: #261F1F;
+                    font-weight: 700;
+                    font-size: 23px;
+                    border: 2px solid #261F1F;
+                    border-radius: 50px;
+                    padding: 0.2em 0em;
+                    width: 9vw;
+
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        z-index: -2;
+                        height: 100%;
+                        width: 100%;
+                        top: 0;
+                        left: 0;
+                        background: white;
+                    }
+
+                    &::after {
+                        content: "";
+                        transition: 0.2s ease-in-out;
+                        position: absolute;
+                        z-index: -1;
+                        height: 100%;
+                        width: 0;
+                        top: 0;
+                        left: 0;
+                        border-radius: 50px;
+                    }
+
+                    &.insta::after {
+                        background: radial-gradient(circle at 20% 140%, #fdf497 0%, #fdf497 10%, #fd5949 30%, #d6249f 50%, #285AEB 80%);
+                    }
+
+                    &.snap::after {
+                        background: #FFFA54;
+                    }
+
+                    &.twitter::after {
+                        background: #5CC5F5;
+                    }
+
+                    &.youtube::after {
+                        background: #FA0F17;
+                    }
+
+                    @media (max-width: 1800px) {
+                        font-size: 20px;
+                    }
+
+                    @media (max-width: 1600px) {
+                        font-size: 17px;
+                    }
+
+                    @media (max-width: 1400px) {
+                        font-size: 15px;
+                    }
+                }
+
+                &:hover {
+                    cursor: pointer;
+
+                    p {
+                        &::after {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 .part-six {
@@ -572,7 +786,11 @@
         }
 
         button {
+            position: absolute;
             transition: 0.2s ease;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
             height: 70%;
             width: 95%;
             text-transform: uppercase;
@@ -583,7 +801,9 @@
 
             &:hover {
                 cursor: pointer;
-                margin: 10px 0 0 10px;
+                top: 55%;
+                left: 51%;
+                transform: translate(-50%, -50%);
             }
 
             @media (max-width: 1800px) {
@@ -599,7 +819,9 @@
             position: absolute;
             height: 70%;
             width: 95%;
-            margin: 10px 0 0 10px;
+            top: 55%;
+            left: 51%;
+            transform: translate(-50%, -50%);
             background-color: #261F1F;
             z-index: 0;
         }

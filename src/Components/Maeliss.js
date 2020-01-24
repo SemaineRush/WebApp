@@ -4,15 +4,20 @@ import profil from '../Assets/media/maeliss/profil-pic.png';
 import waveOne from '../Assets/media/maeliss/vague-un.svg';
 import arrowOne from '../Assets/media/maeliss/fleche-bas.svg';
 import whiteLines from '../Assets/media/maeliss/traits-blancs.svg';
-import bubleOne from '../Assets/media/maeliss/bulle-dynamique.svg';
+import bubbleOne from '../Assets/media/maeliss/bulle-dynamique.svg';
 import arrowTwo from '../Assets/media/maeliss/fleche-droite.svg';
-import bubleTwo from '../Assets/media/maeliss/bull-haut.svg';
+import bubbleTwo from '../Assets/media/maeliss/bulle-haut.svg';
 import paf from '../Assets/media/maeliss/eclat.svg';
 import enveloppe from '../Assets/media/maeliss/enveloppe.svg';
 import waveTwo from '../Assets/media/maeliss/vague-deux.svg';
 import arrowThree from '../Assets/media/maeliss/fleche-eclat-gauche.svg';
 import arrowFour from '../Assets/media/maeliss/fleche-eclat-droite.svg';
 import mouth from '../Assets/media/maeliss/icon-bouche.svg';
+import bubbleThree from '../Assets/media/maeliss/bulle-bas.svg';
+import insta from '../Assets/media/maeliss/icon-insta.svg';
+import snap from '../Assets/media/maeliss/icon-snap.svg';
+import twitter from '../Assets/media/maeliss/icon-twitter.svg';
+import youtube from '../Assets/media/maeliss/icon-youtube.svg';
 
 const createSquares = (number) => {
 	let squares = [];
@@ -25,6 +30,8 @@ const createSquares = (number) => {
 
 	return squares;
 };
+
+const createBubble = () => {};
 
 const Maeliss = (props) => {
 	const [ play, setPlay ] = useState(false);
@@ -42,16 +49,18 @@ const Maeliss = (props) => {
 
 				<p className="p-one">leader de confiance</p>
 				<p className="p-two">multiculturelle</p>
+
 				<div className="boom">
-					<img src={bubleOne} />
+					<img src={bubbleOne} />
 					<p>dynamique</p>
 				</div>
 				<div className="envelope">
 					<img src={enveloppe} />
 					<p>votez</p>
 				</div>
-				<div className="buble">
-					<img src={bubleTwo} />
+
+				<div className="bubble">
+					<img src={bubbleTwo} />
 					<h1>
 						maëliss<br />taraud<br />
 						<span>
@@ -115,6 +124,7 @@ const Maeliss = (props) => {
 					</div>
 				</div>
 			</section>
+
 			<section className="part-three">
 				<h2>son programme·sa vocation</h2>
 				<h3>responsabilité · équité · fraternité</h3>
@@ -159,6 +169,7 @@ const Maeliss = (props) => {
 					</div>
 				</div>
 			</section>
+
 			<section className="part-four">
 				<img src={waveTwo} className="wave-two" />
 				<img src={arrowThree} />
@@ -168,20 +179,79 @@ const Maeliss = (props) => {
 				</div>
 				<img src={arrowFour} />
 			</section>
+
 			<section className="part-five">
 				<div className="squares">{createSquares(25).map((square) => square)}</div>
 				<div className="squares">{createSquares(25).map((square) => square)}</div>
+
+				<div className="middle">
+					<div className="squaresColumn">{createSquares(8).map((square) => square)}</div>
+					<div className="squaresColumn">{createSquares(8).map((square) => square)}</div>
+
+					<div className="videoContainer">
+						<div className="bubble">
+							<img src={bubbleThree} />
+							<p>
+								Retrouvez Maëliss<span>en vidéo</span>
+							</p>
+						</div>
+						<div className="video">
+							<video src="" />
+							<button>
+								<img src="" />
+							</button>
+						</div>
+					</div>
+
+					<div className="squaresColumn">{createSquares(8).map((square) => square)}</div>
+					<div className="squaresColumn">{createSquares(8).map((square) => square)}</div>
+
+					<div className="socialContainer">
+						<div className="bubble">
+							<img src={bubbleThree} />
+							<p>
+								Retrouvez Maëliss<span>sur les réseaux</span>
+							</p>
+						</div>
+						<a href="" className="social">
+							<img src={insta} alt="instagram" />
+							<p className="insta">IG_maelT</p>
+						</a>
+						<a href="" className="social">
+							<img src={snap} alt="snapchat" />
+							<p className="snap">mealmaire</p>
+						</a>
+						<a href="" className="social">
+							<img src={twitter} alt="twitter" />
+							<p className="twitter">mayocurly</p>
+						</a>
+						<a href="" className="social">
+							<img src={youtube} alt="youtube" />
+							<p className="youtube">mael_maire</p>
+						</a>
+					</div>
+
+					<div className="squaresColumn">{createSquares(8).map((square) => square)}</div>
+					<div className="squaresColumn">{createSquares(8).map((square) => square)}</div>
+					<div className="squaresColumn">{createSquares(8).map((square) => square)}</div>
+				</div>
+
+				<div className="squares">{createSquares(25).map((square) => square)}</div>
+				<div className="squares">{createSquares(25).map((square) => square)}</div>
 			</section>
+
 			<section className="part-six">
 				<div>
 					<img src={mouth} />
 					<img src={mouth} />
 					<img src={mouth} />
 				</div>
+
 				<div>
 					<button>votez !</button>
 					<span />
 				</div>
+
 				<div>
 					<img src={mouth} />
 					<img src={mouth} />
