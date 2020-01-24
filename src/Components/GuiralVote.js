@@ -121,5 +121,5 @@ export class GuiralVote extends Component {
 }
 
 export default GoogleApiWrapper({
-    apiKey: ("AIzaSyCE421Uj11tGF0HnU3YWNJuotovLW9nFmM")
+    apiKey: (process.env.REACT_APP_GOOGLE_API_KEY)
 })(GuiralVote)
