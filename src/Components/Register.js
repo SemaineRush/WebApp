@@ -1,54 +1,35 @@
 import React, { Component } from 'react'
 import '../Assets/register.css'
+import api from './Api'
 
 export default class Register extends Component {
-
     constructor(props) {
         super(props);
         this.state = {
-          user: [],
-          lastname: "",
-          firstname: "",
-          email: "",
-          password: ""
+            user: [],
+            lastname: "",
+            firstname: "",
+            email: "",
+            password: ""
         };
-
-        this.handleSubmit = this.handleSubmit.bind(this);
     }
 
-     handleChange = (e) => {
+    handleChange = (e) => {
         this.setState({[e.target.name]:e.target.value})
-     }
+    }
 
-    handleSubmit() {
-
-        var myHeaders = new Headers();
-        myHeaders.append("Content-Type", "application/x-www-form-urlencoded");
-
-        var raw = JSON.stringify({"firstname": this.state.firstname, "lastname": this.state.lastname, "email" : this.state.email, "password": this.state.password});
-        
-        fetch("https://testsamheroku.herokuapp.com/api/auth/register", {
-            method: 'POST',
-            headers: myHeaders,
-            body: raw,
-            redirect: 'follow'
+    handleSubmit(e) {
+        e.preventDefault()
+        api.Register(this.state.firstname, this.state.lastname, this.state.email, this.state.password).then((json) =>{
+            this.props.changeStatus(true)
         })
-        .then(response => response.json())
-        .then(result => {
-            console.log(result)
-            console.log(this.state.email);
-            if (result.token) {
-                localStorage.setItem('user_info', result.token);
-            }
-        })
-        .catch(error => console.log('error', error));
     }
         
     render() {
         return (
             <div className="register_container">
                 <span className="sign_account">Premiere fois sur notre site ? Créez un compte !</span>
-                <form className="form_login">
+                <form className="form_login" onSubmit={this.handleSubmit.bind(this)}>
                     <div className="form_line login">
                         <h3>nom</h3>
                         <input 
@@ -95,7 +76,7 @@ export default class Register extends Component {
                         <h3>confirmation mot de passe</h3>
                         <input placeholder="" className="form_input" type="password" autoComplete="on"/>
                     </div>
-                    <button className="form_button" type="button" onClick={this.handleSubmit}>Inscription</button>
+                    <button className="form_button" type="submit">Inscription</button>
                 </form>
             </div>
         )
