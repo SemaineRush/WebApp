@@ -3,6 +3,7 @@ export default {
     getToken: (email,password) => {
         return new Promise((resolve,reject) => {
             fetch("https://testsamheroku.herokuapp.com/api/auth/login", {
+                mode: 'no-cors',
                 method: 'POST',
                 headers: {
                     'Content-Type': "application/json"

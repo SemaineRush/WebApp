@@ -21,7 +21,8 @@ export default class Register extends Component {
     handleSubmit(e) {
         e.preventDefault()
         api.Register(this.state.firstname, this.state.lastname, this.state.email, this.state.password).then((json) =>{
-            this.props.changeStatus(true)
+            // this.props.changeStatus(true)
+            console.log(json)
         })
     }
         
