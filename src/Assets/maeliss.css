@@ -1,64 +1,61 @@
-.wave-one {
+.containerMaeliss * {
+  font-family: "Roboto Mono", monospace;
+}
+.containerMaeliss .wave-one {
   position: absolute;
   top: 90vh;
   left: 0px;
   width: 100vw;
   z-index: 2;
 }
-
-* {
-  font-family: "Roboto Mono", monospace;
-}
-
-.squares {
+.containerMaeliss .squares {
   height: 4vw;
   display: flex;
 }
-.squares span {
+.containerMaeliss .squares span {
   flex: 1;
   border: 2px solid #261F1F;
 }
-
-.part-one {
+.containerMaeliss .part-one {
   position: relative;
   height: 98vh;
   background-color: #FFC700;
   overflow: hidden;
 }
-.part-one .arrow-one {
+.containerMaeliss .part-one .arrow-one {
   position: absolute;
   height: 18vh;
   top: 0;
   left: 10%;
 }
-.part-one .white-lines {
+.containerMaeliss .part-one .white-lines {
   position: absolute;
   height: 35vh;
   top: 15vh;
   left: 0;
 }
-.part-one .arrow-two {
+.containerMaeliss .part-one .arrow-two {
   position: absolute;
   height: 8vh;
   top: 37vh;
   left: 27%;
 }
-.part-one .paf {
+.containerMaeliss .part-one .paf {
   position: absolute;
   height: 13vh;
   top: 30vh;
   left: 45%;
 }
-.part-one .squareSkew {
+.containerMaeliss .part-one .squareSkew {
   position: absolute;
-  top: -49.5vh;
+  top: -51vh;
   right: -11.5%;
   height: 100vh;
   width: 79vh;
   background-color: #261F1F;
   transform: rotate(60deg) skewX(24deg);
 }
-.part-one p {
+.containerMaeliss .part-one p {
   position: absolute;
   padding: 0.5em 1em;
   font-size: 25px;
@@ -69,16 +66,16 @@
   font-weight: 700;
 }
 @media (max-width: 1800px) {
-  .part-one p {
+  .containerMaeliss .part-one p {
     font-size: 20px;
   }
 }
 @media (max-width: 1400px) {
-  .part-one p {
+  .containerMaeliss .part-one p {
     font-size: 15px;
   }
 }
-.part-one .p-one {
+.containerMaeliss .part-one .p-one {
   border: 4px solid black;
   border-radius: 50px;
   top: 12vh;
@@ -86,15 +83,15 @@
   display: flex;
   align-items: center;
 }
-.part-one .p-one span {
+.containerMaeliss .part-one .p-one span {
   width: 20px;
 }
-.part-one .p-two {
+.containerMaeliss .part-one .p-two {
   border: 4px solid black;
   top: 19vh;
   left: 30%;
 }
-.part-one .boom {
+.containerMaeliss .part-one .boom {
   position: absolute;
   display: flex;
   align-items: center;
@@ -103,15 +100,15 @@
   top: 26vh;
   left: 20%;
 }
-.part-one .boom img {
+.containerMaeliss .part-one .boom img {
   height: 100%;
 }
-.part-one .boom p {
+.containerMaeliss .part-one .boom p {
   position: absolute;
   background: none;
   margin-bottom: 0.5em;
 }
-.part-one .envelope {
+.containerMaeliss .part-one .envelope {
   position: absolute;
   display: flex;
   align-items: center;
@@ -120,17 +117,17 @@
   top: 35vh;
   left: 35%;
 }
-.part-one .envelope img {
+.containerMaeliss .part-one .envelope img {
   height: 100%;
 }
-.part-one .envelope p {
+.containerMaeliss .part-one .envelope p {
   position: absolute;
   background: none;
   top: 70%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.part-one .bubble {
+.containerMaeliss .part-one .bubble {
   position: absolute;
   display: flex;
   align-items: center;
@@ -139,10 +136,10 @@
   top: 45vh;
   left: 20%;
 }
-.part-one .bubble img {
+.containerMaeliss .part-one .bubble img {
   height: 100%;
 }
-.part-one .bubble h1 {
+.containerMaeliss .part-one .bubble h1 {
   position: absolute;
   text-align: center;
   text-transform: uppercase;
@@ -153,14 +150,14 @@
   font-family: Helvetica, sans-serif;
   margin-top: 0.5em;
 }
-.part-one .bubble h1 span {
+.containerMaeliss .part-one .bubble h1 span {
   font-family: "Roboto Mono", monospace;
   font-size: 25px;
   display: flex;
   align-items: flex-end;
   text-transform: none;
 }
-.part-one .bubble h1 span div {
+.containerMaeliss .part-one .bubble h1 span div {
   height: 4px;
   width: 40px;
   background-color: black;
@@ -168,22 +165,22 @@
   margin: 0 10px 10px 0;
 }
 @media (max-width: 1800px) {
-  .part-one .bubble h1 {
+  .containerMaeliss .part-one .bubble h1 {
     font-size: 55px;
   }
-  .part-one .bubble h1 span {
+  .containerMaeliss .part-one .bubble h1 span {
     font-size: 20px;
   }
 }
 @media (max-width: 1400px) {
-  .part-one .bubble h1 {
+  .containerMaeliss .part-one .bubble h1 {
     font-size: 45px;
   }
-  .part-one .bubble h1 span {
+  .containerMaeliss .part-one .bubble h1 span {
     font-size: 15px;
   }
 }
-.part-one .card {
+.containerMaeliss .part-one .card {
   position: absolute;
   display: flex;
   justify-content: center;
@@ -196,112 +193,117 @@
   border: 4px solid black;
   overflow: hidden;
 }
-.part-one .card .img {
+.containerMaeliss .part-one .card .img {
+  position: relative;
   height: 80%;
+  width: 100%;
   overflow: hidden;
   border: 4px solid black;
 }
-.part-one .card .img img {
-  height: 100%;
+.containerMaeliss .part-one .card .img img {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
-.part-one .card p {
+.containerMaeliss .part-one .card p {
   background: none;
   bottom: 20px;
 }
-.part-one .card-two {
+.containerMaeliss .part-one .card-two {
   top: 9vh;
   right: 15%;
   transform: rotate(8deg);
 }
-.part-one .card-three {
+.containerMaeliss .part-one .card-three {
   top: 8vh;
   right: 11%;
   transform: rotate(16deg);
 }
-
-.part-two {
+.containerMaeliss .part-two {
   display: flex;
   flex-direction: column;
   height: 65vh;
 }
-.part-two * {
+.containerMaeliss .part-two * {
   font-weight: 700;
   color: #261F1F;
 }
-.part-two .container {
+.containerMaeliss .part-two .container {
   display: flex;
   flex: 1;
 }
-.part-two .container .content {
+.containerMaeliss .part-two .container .content {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   border: 1px solid black;
 }
-.part-two .container .content-one {
+.containerMaeliss .part-two .container .content-one {
   flex: 1;
   height: 100%;
 }
-.part-two .container .content-one div {
+.containerMaeliss .part-two .container .content-one div {
   border: 1px solid black;
   width: 100%;
 }
-.part-two .container .content-one div:first-child {
+.containerMaeliss .part-two .container .content-one div:first-child {
   flex: 2;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.part-two .container .content-one div:first-child p {
+.containerMaeliss .part-two .container .content-one div:first-child p {
   padding: 1em;
   font-size: 27px;
   text-align: left;
 }
 @media (max-width: 1800px) {
-  .part-two .container .content-one div:first-child p {
+  .containerMaeliss .part-two .container .content-one div:first-child p {
     font-size: 22px;
   }
 }
 @media (max-width: 1400px) {
-  .part-two .container .content-one div:first-child p {
+  .containerMaeliss .part-two .container .content-one div:first-child p {
     font-size: 17px;
   }
 }
-.part-two .container .content-one div:last-child {
+.containerMaeliss .part-two .container .content-one div:last-child {
   flex: 1;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
 }
-.part-two .container .content-one div:last-child p {
+.containerMaeliss .part-two .container .content-one div:last-child p {
   font-size: 27px;
   text-align: left;
   padding: 20px 0 0 20px;
 }
-.part-two .container .content-one div:last-child h3 {
+.containerMaeliss .part-two .container .content-one div:last-child h3 {
   font-size: 40px;
   text-align: left;
   padding: 0 0 20px 20px;
 }
 @media (max-width: 1800px) {
-  .part-two .container .content-one div:last-child p {
+  .containerMaeliss .part-two .container .content-one div:last-child p {
     font-size: 22px;
   }
-  .part-two .container .content-one div:last-child h3 {
+  .containerMaeliss .part-two .container .content-one div:last-child h3 {
     font-size: 34px;
   }
 }
 @media (max-width: 1400px) {
-  .part-two .container .content-one div:last-child p {
+  .containerMaeliss .part-two .container .content-one div:last-child p {
     font-size: 17px;
   }
-  .part-two .container .content-one div:last-child h3 {
+  .containerMaeliss .part-two .container .content-one div:last-child h3 {
     font-size: 28px;
   }
 }
-.part-two .container .content-two {
+.containerMaeliss .part-two .container .content-two {
   position: relative;
   height: 100%;
   width: 35%;
@@ -310,7 +312,7 @@
   align-items: center;
   justify-content: center;
 }
-.part-two .container .content-two span {
+.containerMaeliss .part-two .container .content-two span {
   position: absolute;
   height: 50%;
   width: 70%;
@@ -320,7 +322,7 @@
   background-color: #261F1F;
   z-index: 0;
 }
-.part-two .container .content-two button {
+.containerMaeliss .part-two .container .content-two button {
   position: absolute;
   transition: 0.2s ease;
   top: 50%;
@@ -332,86 +334,85 @@
   z-index: 1;
   border: none;
 }
-.part-two .container .content-two button h3 {
+.containerMaeliss .part-two .container .content-two button h3 {
   text-transform: uppercase;
   font-size: 50px;
 }
-.part-two .container .content-two button p {
+.containerMaeliss .part-two .container .content-two button p {
   font-size: 30px;
 }
-.part-two .container .content-two button:hover {
+.containerMaeliss .part-two .container .content-two button:hover {
   cursor: pointer;
   top: 52%;
   left: 52%;
   transform: translate(-50%, -50%);
 }
 @media (max-width: 1800px) {
-  .part-two .container .content-two button h3 {
+  .containerMaeliss .part-two .container .content-two button h3 {
     font-size: 40px;
   }
-  .part-two .container .content-two button p {
+  .containerMaeliss .part-two .container .content-two button p {
     font-size: 25px;
   }
 }
 @media (max-width: 1400px) {
-  .part-two .container .content-two button h3 {
+  .containerMaeliss .part-two .container .content-two button h3 {
     font-size: 30px;
   }
-  .part-two .container .content-two button p {
+  .containerMaeliss .part-two .container .content-two button p {
     font-size: 20px;
   }
 }
-
-.part-three {
+.containerMaeliss .part-three {
   height: 100vh;
   background-color: #F9F7E9;
 }
-.part-three * {
+.containerMaeliss .part-three * {
   color: #261F1F;
 }
-.part-three h2 {
+.containerMaeliss .part-three h2 {
   text-transform: uppercase;
   font-size: 110px;
 }
-.part-three h3 {
+.containerMaeliss .part-three h3 {
   font-size: 40px;
   margin-right: 300px;
 }
 @media (max-width: 1800px) {
-  .part-three h2 {
+  .containerMaeliss .part-three h2 {
     font-size: 95px;
   }
-  .part-three h3 {
+  .containerMaeliss .part-three h3 {
     font-size: 30px;
   }
 }
 @media (max-width: 1400px) {
-  .part-three h2 {
+  .containerMaeliss .part-three h2 {
     font-size: 80px;
   }
-  .part-three h3 {
+  .containerMaeliss .part-three h3 {
     font-size: 20px;
   }
 }
-.part-three .container {
+.containerMaeliss .part-three .container {
   width: 100%;
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
   margin-top: 50px;
 }
-.part-three .container .content {
+.containerMaeliss .part-three .container .content {
   flex: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-.part-three .container .content div {
+.containerMaeliss .part-three .container .content div {
   margin-top: 25px;
   width: 80%;
 }
-.part-three .container .content div p {
+.containerMaeliss .part-three .container .content div p {
   padding: 1em 2em;
   font-size: 25px;
   font-weight: 700;
@@ -421,22 +422,21 @@
   box-shadow: 5px 5px 0px #261F1F;
 }
 @media (max-width: 1800px) {
-  .part-three .container .content div p {
+  .containerMaeliss .part-three .container .content div p {
     font-size: 20px;
   }
 }
 @media (max-width: 1600px) {
-  .part-three .container .content div p {
+  .containerMaeliss .part-three .container .content div p {
     font-size: 17px;
   }
 }
 @media (max-width: 1400px) {
-  .part-three .container .content div p {
+  .containerMaeliss .part-three .container .content div p {
     font-size: 15px;
   }
 }
-
-.part-four {
+.containerMaeliss .part-four {
   position: relative;
   background-color: #F9F7E7;
   height: 50vh;
@@ -444,56 +444,58 @@
   align-items: center;
   justify-content: space-between;
 }
-.part-four .wave-two {
+.containerMaeliss .part-four .wave-two {
   position: absolute;
   top: -75px;
   left: 0px;
   width: 100vw;
   z-index: 2;
 }
-.part-four div {
+.containerMaeliss .part-four .arrow {
+  width: 100%;
+}
+.containerMaeliss .part-four div {
   padding: 50px;
 }
-.part-four div h3 {
+.containerMaeliss .part-four div h3 {
   font-size: 60px;
   font-weight: 400;
 }
-.part-four div h2 {
+.containerMaeliss .part-four div h2 {
   font-weight: 400;
   text-transform: uppercase;
   font-size: 130px;
 }
 @media (max-width: 1800px) {
-  .part-four div h3 {
+  .containerMaeliss .part-four div h3 {
     font-size: 50px;
   }
-  .part-four div h2 {
+  .containerMaeliss .part-four div h2 {
     font-size: 110px;
   }
 }
 @media (max-width: 1400px) {
-  .part-four div h3 {
+  .containerMaeliss .part-four div h3 {
     font-size: 40px;
   }
-  .part-four div h2 {
+  .containerMaeliss .part-four div h2 {
     font-size: 90px;
   }
 }
-
-.part-five .middle {
+.containerMaeliss .part-five .middle {
   display: flex;
 }
-.part-five .middle .squaresColumn {
+.containerMaeliss .part-five .middle .squaresColumn {
   width: 4vw;
   height: 32vw;
   display: flex;
   flex-direction: column;
 }
-.part-five .middle .squaresColumn span {
+.containerMaeliss .part-five .middle .squaresColumn span {
   flex: 1;
   border: 2px solid #261F1F;
 }
-.part-five .middle .bubble {
+.containerMaeliss .part-five .middle .bubble {
   position: absolute;
   z-index: 1;
   height: 7vw;
@@ -501,10 +503,10 @@
   align-items: flex-start;
   justify-content: center;
 }
-.part-five .middle .bubble img {
+.containerMaeliss .part-five .middle .bubble img {
   height: 100%;
 }
-.part-five .middle .bubble p {
+.containerMaeliss .part-five .middle .bubble p {
   position: absolute;
   font-size: 20px;
   font-weight: 700;
@@ -513,25 +515,25 @@
   align-items: flex-start;
   margin-top: 1.2em;
 }
-.part-five .middle .bubble p span {
+.containerMaeliss .part-five .middle .bubble p span {
   text-transform: uppercase;
 }
 @media (max-width: 1800px) {
-  .part-five .middle .bubble p {
+  .containerMaeliss .part-five .middle .bubble p {
     font-size: 17px;
   }
 }
 @media (max-width: 1600px) {
-  .part-five .middle .bubble p {
+  .containerMaeliss .part-five .middle .bubble p {
     font-size: 15px;
   }
 }
 @media (max-width: 1400px) {
-  .part-five .middle .bubble p {
+  .containerMaeliss .part-five .middle .bubble p {
     font-size: 12px;
   }
 }
-.part-five .middle .videoContainer {
+.containerMaeliss .part-five .middle .videoContainer {
   position: relative;
   display: flex;
   align-items: center;
@@ -541,11 +543,11 @@
   box-shadow: inset 0px 0px 0px 3px black;
   background-color: #DCADFF;
 }
-.part-five .middle .videoContainer .bubble {
+.containerMaeliss .part-five .middle .videoContainer .bubble {
   top: -3vw;
   left: 1vw;
 }
-.part-five .middle .videoContainer .video {
+.containerMaeliss .part-five .middle .videoContainer .video {
   position: absolute;
   display: flex;
   align-items: center;
@@ -554,17 +556,17 @@
   height: 24vw;
   width: 80%;
 }
-.part-five .middle .videoContainer .video video {
+.containerMaeliss .part-five .middle .videoContainer .video video {
   height: 100%;
 }
-.part-five .middle .videoContainer .video button {
+.containerMaeliss .part-five .middle .videoContainer .video button {
   position: absolute;
   height: 100%;
   width: 100%;
   background-color: #261F1F;
   border: none;
 }
-.part-five .middle .socialContainer {
+.containerMaeliss .part-five .middle .socialContainer {
   position: relative;
   height: 32vw;
   width: 20vw;
@@ -575,35 +577,35 @@
   box-shadow: inset 0px 0px 0px 3px #261F1F;
   background-color: #DCADFF;
 }
-.part-five .middle .socialContainer .bubble {
+.containerMaeliss .part-five .middle .socialContainer .bubble {
   top: -3.5vw;
 }
-.part-five .middle .socialContainer .social {
+.containerMaeliss .part-five .middle .socialContainer .social {
   z-index: 2;
   display: flex;
   align-items: center;
   text-decoration: none;
 }
-.part-five .middle .socialContainer .social img {
+.containerMaeliss .part-five .middle .socialContainer .social img {
   margin: 15px;
   width: 5vw;
 }
 @media (max-width: 1800px) {
-  .part-five .middle .socialContainer .social img {
+  .containerMaeliss .part-five .middle .socialContainer .social img {
     margin: 12px;
   }
 }
 @media (max-width: 1600px) {
-  .part-five .middle .socialContainer .social img {
+  .containerMaeliss .part-five .middle .socialContainer .social img {
     margin: 10px;
   }
 }
 @media (max-width: 1400px) {
-  .part-five .middle .socialContainer .social img {
+  .containerMaeliss .part-five .middle .socialContainer .social img {
     margin: 8px;
   }
 }
-.part-five .middle .socialContainer .social p {
+.containerMaeliss .part-five .middle .socialContainer .social p {
   position: relative;
   overflow: hidden;
   color: #261F1F;
@@ -614,7 +616,7 @@
   padding: 0.2em 0em;
   width: 9vw;
 }
-.part-five .middle .socialContainer .social p::before {
+.containerMaeliss .part-five .middle .socialContainer .social p::before {
   content: "";
   position: absolute;
   z-index: -2;
@@ -624,7 +626,7 @@
   left: 0;
   background: white;
 }
-.part-five .middle .socialContainer .social p::after {
+.containerMaeliss .part-five .middle .socialContainer .social p::after {
   content: "";
   transition: 0.2s ease-in-out;
   position: absolute;
@@ -635,41 +637,40 @@
   left: 0;
   border-radius: 50px;
 }
-.part-five .middle .socialContainer .social p.insta::after {
+.containerMaeliss .part-five .middle .socialContainer .social p.insta::after {
   background: radial-gradient(circle at 20% 140%, #fdf497 0%, #fdf497 10%, #fd5949 30%, #d6249f 50%, #285AEB 80%);
 }
-.part-five .middle .socialContainer .social p.snap::after {
+.containerMaeliss .part-five .middle .socialContainer .social p.snap::after {
   background: #FFFA54;
 }
-.part-five .middle .socialContainer .social p.twitter::after {
+.containerMaeliss .part-five .middle .socialContainer .social p.twitter::after {
   background: #5CC5F5;
 }
-.part-five .middle .socialContainer .social p.youtube::after {
+.containerMaeliss .part-five .middle .socialContainer .social p.youtube::after {
   background: #FA0F17;
 }
 @media (max-width: 1800px) {
-  .part-five .middle .socialContainer .social p {
+  .containerMaeliss .part-five .middle .socialContainer .social p {
     font-size: 20px;
   }
 }
 @media (max-width: 1600px) {
-  .part-five .middle .socialContainer .social p {
+  .containerMaeliss .part-five .middle .socialContainer .social p {
     font-size: 17px;
   }
 }
 @media (max-width: 1400px) {
-  .part-five .middle .socialContainer .social p {
+  .containerMaeliss .part-five .middle .socialContainer .social p {
     font-size: 15px;
   }
 }
-.part-five .middle .socialContainer .social:hover {
+.containerMaeliss .part-five .middle .socialContainer .social:hover {
   cursor: pointer;
 }
-.part-five .middle .socialContainer .social:hover p::after {
+.containerMaeliss .part-five .middle .socialContainer .social:hover p::after {
   width: 100%;
 }
-
-.part-six {
+.containerMaeliss .part-six {
   position: fixed;
   bottom: 0;
   height: 9vh;
@@ -681,7 +682,7 @@
   border: 3px solid #261F1F;
   z-index: 99;
 }
-.part-six div {
+.containerMaeliss .part-six div {
   position: relative;
   height: 100%;
   width: 24%;
@@ -689,10 +690,10 @@
   align-items: flex-end;
   justify-content: space-evenly;
 }
-.part-six div img {
+.containerMaeliss .part-six div img {
   height: 85%;
 }
-.part-six div button {
+.containerMaeliss .part-six div button {
   position: absolute;
   transition: 0.2s ease;
   top: 50%;
@@ -706,23 +707,23 @@
   border: 2px solid #261F1F;
   z-index: 1;
 }
-.part-six div button:hover {
+.containerMaeliss .part-six div button:hover {
   cursor: pointer;
   top: 55%;
   left: 51%;
   transform: translate(-50%, -50%);
 }
 @media (max-width: 1800px) {
-  .part-six div button {
+  .containerMaeliss .part-six div button {
     font-size: 25px;
   }
 }
 @media (max-width: 1400px) {
-  .part-six div button {
+  .containerMaeliss .part-six div button {
     font-size: 15px;
   }
 }
-.part-six div span {
+.containerMaeliss .part-six div span {
   position: absolute;
   height: 70%;
   width: 95%;
@@ -732,7 +733,7 @@
   background-color: #261F1F;
   z-index: 0;
 }
-.part-six div:nth-of-type(2) {
+.containerMaeliss .part-six div:nth-of-type(2) {
   width: 35%;
   align-items: center;
   justify-content: center;
