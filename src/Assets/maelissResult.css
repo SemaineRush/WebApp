@@ -1,0 +1,45 @@
+.containerMaelissResult {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+* {
+  font-family: "Roboto Mono", monospace;
+}
+
+.squares {
+  height: 4vw;
+  display: flex;
+}
+.squares span {
+  flex: 1;
+  border: 2px solid #261F1F;
+}
+
+.band {
+  height: 12vw;
+  width: 100%;
+  background-color: #645AE3;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: inset 0px 0px 0px 2px #261F1F;
+}
+.band h2 {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 120px;
+  color: white;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+}
+
+.circle {
+  position: absolute;
+  height: 88vw;
+  width: 88vw;
+  border: 2px solid #261F1F;
+}
+
+/*# sourceMappingURL=maelissResult.css.map */
