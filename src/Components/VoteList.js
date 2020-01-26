@@ -50,7 +50,7 @@ export default class VoteList extends Component {
                 </div>
               </div>
             </div>
-            <div className="content">
+            <div className="voteBottomContent">
               <p>
                 <img src={lock} alt="lock"/> Vote sécurisé,  cybersécurité 100% <br/>
                 <img src={people} alt="user"/> Votre anonymat est préservé

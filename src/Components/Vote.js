@@ -9,7 +9,7 @@ export default class Vote extends Component {
         return (
           <>
             <Header />
-            <div className="container">
+            <div className="votePage">
               
               <div className="red"></div>
               <div className="yellow"></div>
