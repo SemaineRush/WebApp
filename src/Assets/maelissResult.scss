@@ -34,12 +34,35 @@
         color: white;
         margin-left: 0.5em;
         margin-right: 0.5em;
+        text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
     }
 }
 
 .circle {
     position: absolute;
-    height: 88vw;
-    width: 88vw;
-    border: 2px solid #261F1F;
+    bottom: -17vw;
+    left: 50%;
+    transform: translate(-50%, 0);
+    height: 52vw;
+    width: 52vw;
+    border: 3px solid #261F1F;
+    border-radius: 50%;
+    background-color: #FFC500;
+}
+
+
+.palms {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 92vw;
+}
+
+.maeliss {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 50vw;
 }
