@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import {Map, InfoWindow, Marker, GoogleApiWrapper} from 'google-maps-react';
 import Sup2020 from '../Assets/media/SUP2020.svg'
 import Profile from '../Assets/media/export.svg'
 import arrow1 from '../Assets/media/Group32.svg'
@@ -8,12 +9,18 @@ import arrow4 from '../Assets/media/Group38.svg'
 import arrow5 from '../Assets/media/Group40.svg'
 import P2020 from '../Assets/media/2020.svg'
 import Vector1 from '../Assets/media/Vector18.svg'
-import Map from '../Assets/media/map.jpg'
+import imgMap from '../Assets/media/map.jpg'
 import articleCover from '../Assets/media/article_img.svg'
 
 import '../Assets/guiralvote.css'
-
-export default class GuiralVote extends Component {
+const style = {
+    width: '50vw',
+    height: '54.5vh',
+    marginTop : "0",
+    marginLeft : "0"
+}
+const pos = { lat: 48.8659151, lng: 2.3715038 }
+export class GuiralVote extends Component {
     render() {
         return (
             <div className='guiral_home'>
@@ -68,8 +75,23 @@ export default class GuiralVote extends Component {
                     <img className="arrow_month" src={arrow5} /><img className="arrow" src={arrow4}/>
                 </div>
                 <div className="actuality">
-                    <div className="map">
-                        <img src={Map} />
+                    <div >
+                        <Map 
+                        className="map"
+                        google={this.props.google} 
+                        zoom={14}
+                        style={style}
+                        initialCenter={{
+                            lat: 48.8663661,
+                            lng: 2.373705
+                        }}
+                        zoom={18}
+
+                        >
+                            <Marker onClick={this.onMarkerClick}
+                                    name={'Current location'}
+                                    position={pos} />
+                        </Map>
                     </div>
                     <div className="feed">
                         <h3>Toute l'actualité</h3>
@@ -97,3 +119,7 @@ export default class GuiralVote extends Component {
         )
     }
 }
+
+export default GoogleApiWrapper({
+    apiKey: (process.env.REACT_APP_GOOGLE_API_KEY)
+})(GuiralVote)
