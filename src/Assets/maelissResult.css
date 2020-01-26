@@ -6,6 +6,8 @@
 
 * {
   font-family: "Roboto Mono", monospace;
+  text-transform: uppercase;
+  font-weight: 700;
 }
 
 .squares {
@@ -27,13 +29,10 @@
   box-shadow: inset 0px 0px 0px 2px #261F1F;
 }
 .band h2 {
-  text-transform: uppercase;
-  font-weight: 700;
   font-size: 120px;
   color: white;
   margin-left: 0.5em;
   margin-right: 0.5em;
-  text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
 }
 
 .circle {
@@ -62,6 +61,115 @@
   left: 50%;
   transform: translate(-50%, 0);
   width: 50vw;
+}
+
+.centerBand {
+  position: absolute;
+  height: 63vh;
+  width: 12vw;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  background-color: white;
+  border: 3px solid #261F1F;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.centerBand .arrow {
+  height: 20%;
+}
+.centerBand .arrow:first-child {
+  margin-top: -5px;
+}
+.centerBand .crown {
+  height: 10%;
+  margin-bottom: 15%;
+}
+
+.win {
+  position: absolute;
+  height: 10vh;
+  width: 68vw;
+  top: 63vh;
+  left: 50%;
+  transform: translate(-50%, 0);
+  border: 3px solid #261F1F;
+  border-radius: 100px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+}
+.win h1 {
+  z-index: 1;
+  font-size: 40px;
+  padding-left: 2em;
+  margin: 0;
+  color: white;
+  text-shadow: -2px 0 #645AE3, 0 2px #645AE3, 2px 0 #645AE3, 0 -2px #645AE3;
+}
+.win h3 {
+  z-index: 1;
+  position: absolute;
+  font-size: 55px;
+  right: 1em;
+  color: #645AE3;
+}
+.win .progressBar {
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 42%;
+  background-color: #645AE3;
+  border-top-left-radius: 100px;
+  border-bottom-left-radius: 100px;
+}
+.win::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  box-shadow: inset 0px 0px 0px 15px white;
+  border-radius: 100px;
+}
+
+.maire {
+  position: absolute;
+  top: 73vh;
+  left: 50%;
+  transform: translate(-50%, 0);
+  height: 12vw;
+  width: 12vw;
+  border: 3px solid #261F1F;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.maire h3 {
+  font-size: 60px;
+  color: #261F1F;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 1em;
+}
+.maire h3 span {
+  font-size: 80px;
+  line-height: 1em;
+}
+
+.losers {
+  position: absolute;
+  height: 28vw;
+  width: 16vw;
+  top: 0;
+  right: 8vw;
+  background-color: #FFC500;
+  box-shadow: inset 0px 0px 0px 3px #261F1F;
 }
 
 /*# sourceMappingURL=maelissResult.css.map */
