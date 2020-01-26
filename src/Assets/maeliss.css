@@ -451,6 +451,9 @@
   width: 100vw;
   z-index: 2;
 }
+.part-four .arrow {
+  width: 100%;
+}
 .part-four div {
   padding: 50px;
 }
