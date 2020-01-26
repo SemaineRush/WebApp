@@ -37,7 +37,7 @@ const Maeliss = (props) => {
 	const [ play, setPlay ] = useState(false);
 
 	return (
-		<div className="bigContainer">
+		<div className="containerMaeliss">
 			<img src={waveOne} className="wave-one" />
 
 			<section className="part-one">
@@ -172,12 +172,12 @@ const Maeliss = (props) => {
 
 			<section className="part-four">
 				<img src={waveTwo} className="wave-two" />
-				<img src={arrowThree} />
+				<img className="arrow" src={arrowThree} />
 				<div>
 					<h3>Faites le choix</h3>
 					<h2>maëliss</h2>
 				</div>
-				<img src={arrowFour} />
+				<img className="arrow" src={arrowFour} />
 			</section>
 
 			<section className="part-five">
