@@ -212,6 +212,14 @@
 }
 
 .actuality .map{
+    position: relative;
+}
+
+.mapContainer{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: -530px;
 }
 
 .media{

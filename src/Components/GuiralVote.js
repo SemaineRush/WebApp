@@ -1,5 +1,4 @@
-import React, { Component } from 'react'
-import {Map, InfoWindow, Marker, GoogleApiWrapper} from 'google-maps-react';
+import React, { Component, useState } from 'react'
 import Sup2020 from '../Assets/media/SUP2020.svg'
 import Profile from '../Assets/media/export.svg'
 import arrow1 from '../Assets/media/Group32.svg'
@@ -8,19 +7,35 @@ import arrow3 from '../Assets/media/Group34.svg'
 import arrow4 from '../Assets/media/Group38.svg'
 import arrow5 from '../Assets/media/Group40.svg'
 import P2020 from '../Assets/media/2020.svg'
+import mapboxgl from 'mapbox-gl';
 import Vector1 from '../Assets/media/Vector18.svg'
-import imgMap from '../Assets/media/map.jpg'
 import articleCover from '../Assets/media/article_img.svg'
 
 import '../Assets/guiralvote.css'
-const style = {
-    width: '50vw',
-    height: '54.5vh',
-    marginTop : "0",
-    marginLeft : "0"
-}
-const pos = { lat: 48.8659151, lng: 2.3715038 }
-export class GuiralVote extends Component {
+
+mapboxgl.accessToken= "pk.eyJ1IjoiZ29sZGRtYWQiLCJhIjoiY2s1cXF4cnhqMDR5MzNtbmx1ZmZwa3k1diJ9.DB02Xu0QwgX3mikYn14-vA";
+
+export default class GuiralVote extends Component {
+    constructor(props){
+        super(props);
+        this.state = {
+        lng: 2.3713613,
+        lat: 48.8663025,
+        zoom: 15
+        };
+    }
+    componentDidMount() {
+
+        
+
+        const map = new mapboxgl.Map({
+        container: this.mapContainer,
+        style: 'mapbox://styles/golddmad/ck5tfzef20m3u1ippfmjrf59s',
+        center: [this.state.lng, this.state.lat],
+        zoom: this.state.zoom
+        });
+        }
+
     render() {
         return (
             <div className='guiral_home'>
@@ -75,23 +90,9 @@ export class GuiralVote extends Component {
                     <img className="arrow_month" src={arrow5} /><img className="arrow" src={arrow4}/>
                 </div>
                 <div className="actuality">
-                    <div >
-                        <Map 
-                        className="map"
-                        google={this.props.google} 
-                        zoom={14}
-                        style={style}
-                        initialCenter={{
-                            lat: 48.8663661,
-                            lng: 2.373705
-                        }}
-                        zoom={18}
-
-                        >
-                            <Marker onClick={this.onMarkerClick}
-                                    name={'Current location'}
-                                    position={pos} />
-                        </Map>
+                    <div className="map" >
+                        <div ref={el => this.mapContainer = el} className="mapContainer" />
+                        
                     </div>
                     <div className="feed">
                         <h3>Toute l'actualité</h3>
@@ -120,6 +121,4 @@ export class GuiralVote extends Component {
     }
 }
 
-export default GoogleApiWrapper({
-    apiKey: (process.env.REACT_APP_GOOGLE_API_KEY)
-})(GuiralVote)
+
