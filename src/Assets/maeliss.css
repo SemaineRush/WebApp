@@ -16,6 +16,11 @@
   flex: 1;
   border: 2px solid #261F1F;
 }
+@media (max-width: 1400px) {
+  .containerMaeliss .squares span {
+    border: 1px solid #261F1F;
+  }
+}
 .containerMaeliss .part-one {
   position: relative;
   height: 98vh;
@@ -494,6 +499,11 @@
 .containerMaeliss .part-five .middle .squaresColumn span {
   flex: 1;
   border: 2px solid #261F1F;
+}
+@media (max-width: 1400px) {
+  .containerMaeliss .part-five .middle .squaresColumn span {
+    border: 1px solid #261F1F;
+  }
 }
 .containerMaeliss .part-five .middle .bubble {
   position: absolute;
