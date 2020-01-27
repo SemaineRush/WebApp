@@ -18,6 +18,7 @@ import insta from '../Assets/media/maeliss/icon-insta.svg';
 import snap from '../Assets/media/maeliss/icon-snap.svg';
 import twitter from '../Assets/media/maeliss/icon-twitter.svg';
 import youtube from '../Assets/media/maeliss/icon-youtube.svg';
+import ReactPlayer from 'react-player'
 
 const createSquares = (number) => {
 	let squares = [];
@@ -189,6 +190,13 @@ const Maeliss = (props) => {
 					<div className="squaresColumn">{createSquares(8).map((square) => square)}</div>
 
 					<div className="videoContainer">
+						<ReactPlayer 
+						className="player"
+						height="85%"
+						width="100%"
+						url='https://www.youtube.com/watch?v=m7SlTS8R2I0'
+						controls>
+						</ReactPlayer>
 						<div className="bubble">
 							<img src={bubbleThree} />
 							<p>
@@ -196,7 +204,6 @@ const Maeliss = (props) => {
 							</p>
 						</div>
 						<div className="video">
-							<video src="" />
 							<button>
 								<img src="" />
 							</button>
