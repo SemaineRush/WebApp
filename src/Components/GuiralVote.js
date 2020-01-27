@@ -10,6 +10,7 @@ import P2020 from '../Assets/media/2020.svg'
 import mapboxgl from 'mapbox-gl';
 import Vector1 from '../Assets/media/Vector18.svg'
 import articleCover from '../Assets/media/article_img.svg'
+import ReactPlayer from 'react-player'
 
 import '../Assets/guiralvote.css'
 
@@ -113,8 +114,16 @@ export default class GuiralVote extends Component {
                     </div>
                 </div>
                 <div className="media">
-                    <div></div>
-                    <div></div>
+                    <div>
+                    </div>
+                    
+                    <ReactPlayer 
+                    className="player"
+                    height="85%"
+                    width="100%"
+                    url='https://www.youtube.com/watch?v=m7SlTS8R2I0'
+                    controls>
+                    </ReactPlayer>
                 </div>
             </div>
         )
