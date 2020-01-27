@@ -21,6 +21,25 @@ export default {
             })
         })
     },
+    ResetPassword: (email) => {
+        return new Promise((resolve, reject) => {
+            fetch("https://testsamheroku.herokuapp.com/api/auth/reset", {
+                method: 'POST',
+                headers: {
+                    'Content-Type': "application/json"
+                },
+                body: JSON.stringify({"email" : email})
+            }).then((data) => {
+                data.json().then((json) => {
+                    resolve(json)
+                }).catch((errors)=>{
+                    reject()
+                    console.error('errors',errors)
+                    
+                })
+            })
+        })
+    },
     Register: (firstname, lastname, email, password) => {
         return new Promise((resolve, reject) => {
             fetch("https://testsamheroku.herokuapp.com/api/auth/register", {

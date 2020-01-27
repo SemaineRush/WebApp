@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Redirect } from 'react-router-dom';
+import { Redirect, Link } from 'react-router-dom';
 import '../Assets/register.css'
 import api from './Api'
 // import {BrowserRouter as Redirect} from 'react-router-dom';
@@ -57,7 +57,7 @@ export default class LogIn extends Component {
                             onChange={ this.handleChange } 
                             autoComplete="on"
                         /> <br/>
-                        <a href="/" className="forgot_password" >Mot de passe oublié ?</a>
+                        <Link to="/reset" >Mot de passe oublié ?</Link>
                     </div>
                     <button className="form_button" type="submit" >Connexion</button>
                     <div className="link_account">
