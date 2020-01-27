@@ -62,7 +62,23 @@ const maelissResult = () => {
 				<span className="progressBar" />
 			</div>
 
-			<div className="losers">e</div>
+			<div className="losersContainer">
+				<div className="losers">
+					<p className="percent">22%</p>
+					<div>
+						<h3>arevichan</h3>
+						<span className="progressBar one" />
+					</div>
+				</div>
+
+				<div className="losers">
+					<p className="percent">36%</p>
+					<div>
+						<h3>guidar</h3>
+						<span className="progressBar two" />
+					</div>
+				</div>
+			</div>
 		</div>
 	);
 };

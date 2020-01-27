@@ -174,7 +174,7 @@
     }
 }
 
-.losers {
+.losersContainer {
     position: absolute;
     height: 28vw;
     width: 16vw;
@@ -182,4 +182,76 @@
     right: 8vw;
     background-color: #FFC500;
     box-shadow: inset 0px 0px 0px 3px #261F1F;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .losers {
+        position: relative;
+        height: 100%;
+        width: 40%;
+
+        .percent {
+            position: absolute;
+            font-size: 23px;
+            width: 4vw;
+            top: 7%;
+            left: 50%;
+            transform: translate(-50%, 0%);
+            background-color: white;
+            border: 4px solid #261F1F;
+            padding: 0.3em 0;
+        }
+
+        div {
+            position: absolute;
+            height: 4vw;
+            width: 20vw;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, 0%) rotate(90deg);
+            border: 4px solid #261F1F;
+            border-radius: 100px;
+            background-color: white;
+            display: flex;
+            align-items: center;
+
+            h3 {
+                z-index: 1;
+                font-size: 35px;
+                padding-left: 1em;
+                margin: 0;
+                color: #261F1F;
+                text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+            }
+
+            .progressBar {
+                position: absolute;
+                z-index: 0;
+                top: 0;
+                right: 0;
+                height: 100%;
+                background-color: #645AE3;
+                border-top-right-radius: 100px;
+                border-bottom-right-radius: 100px;
+
+                &.one {
+                    width: 36%;
+                }
+
+                &.two {
+                    width: 22%;
+                }
+            }
+
+            &::after {
+                content: "";
+                position: absolute;
+                height: 100%;
+                width: 100%;
+                box-shadow: inset 0px 0px 0px 10px white;
+                border-radius: 100px;
+            }
+        }
+    }
 }
