@@ -3,28 +3,25 @@
   height: 100vh;
   overflow: hidden;
 }
-
-* {
+.containerMaelissResult * {
   font-family: "Roboto Mono", monospace;
   text-transform: uppercase;
   font-weight: 700;
 }
-
-.squares {
+.containerMaelissResult .squares {
   height: 4vw;
   display: flex;
 }
-.squares span {
+.containerMaelissResult .squares span {
   flex: 1;
   border: 2px solid #261F1F;
 }
 @media (max-width: 1400px) {
-  .squares span {
+  .containerMaelissResult .squares span {
     border: 1px solid #261F1F;
   }
 }
-
-.band {
+.containerMaelissResult .band {
   height: 12vw;
   width: 100%;
   background-color: #645AE3;
@@ -33,29 +30,28 @@
   justify-content: space-between;
   box-shadow: inset 0px 0px 0px 2px #261F1F;
 }
-.band h2 {
+.containerMaelissResult .band h2 {
   font-size: 120px;
   color: white;
   margin-left: 0.5em;
   margin-right: 0.5em;
 }
 @media (max-width: 1800px) {
-  .band h2 {
+  .containerMaelissResult .band h2 {
     font-size: 105px;
   }
 }
 @media (max-width: 1600px) {
-  .band h2 {
+  .containerMaelissResult .band h2 {
     font-size: 90px;
   }
 }
 @media (max-width: 1400px) {
-  .band h2 {
+  .containerMaelissResult .band h2 {
     font-size: 75px;
   }
 }
-
-.circle {
+.containerMaelissResult .circle {
   position: absolute;
   bottom: -17vw;
   left: 50%;
@@ -66,24 +62,21 @@
   border-radius: 50%;
   background-color: #FFC500;
 }
-
-.palms {
+.containerMaelissResult .palms {
   position: absolute;
   bottom: 0;
   left: 50%;
   transform: translate(-50%, 0);
   width: 92vw;
 }
-
-.maeliss {
+.containerMaelissResult .maeliss {
   position: absolute;
   bottom: 0;
   left: 50%;
   transform: translate(-50%, 0);
   width: 50vw;
 }
-
-.centerBand {
+.containerMaelissResult .centerBand {
   position: absolute;
   height: 63vh;
   width: 12vw;
@@ -97,18 +90,17 @@
   align-items: center;
   justify-content: space-between;
 }
-.centerBand .arrow {
+.containerMaelissResult .centerBand .arrow {
   height: 20%;
 }
-.centerBand .arrow:first-child {
+.containerMaelissResult .centerBand .arrow:first-child {
   margin-top: -5px;
 }
-.centerBand .crown {
+.containerMaelissResult .centerBand .crown {
   height: 10%;
   margin-bottom: 15%;
 }
-
-.win {
+.containerMaelissResult .win {
   position: absolute;
   height: 10vh;
   width: 68vw;
@@ -121,7 +113,7 @@
   display: flex;
   align-items: center;
 }
-.win h1 {
+.containerMaelissResult .win h1 {
   z-index: 1;
   font-size: 40px;
   padding-left: 2em;
@@ -129,14 +121,14 @@
   color: white;
   text-shadow: -2px 0 #645AE3, 0 2px #645AE3, 2px 0 #645AE3, 0 -2px #645AE3;
 }
-.win h3 {
+.containerMaelissResult .win h3 {
   z-index: 1;
   position: absolute;
   font-size: 55px;
   right: 1em;
   color: #645AE3;
 }
-.win .progressBar {
+.containerMaelissResult .win .progressBar {
   position: absolute;
   z-index: 0;
   top: 0;
@@ -147,7 +139,7 @@
   border-top-left-radius: 100px;
   border-bottom-left-radius: 100px;
 }
-.win::after {
+.containerMaelissResult .win::after {
   content: "";
   position: absolute;
   height: 100%;
@@ -156,41 +148,40 @@
   border-radius: 100px;
 }
 @media (max-width: 1800px) {
-  .win h1 {
+  .containerMaelissResult .win h1 {
     font-size: 35px;
   }
-  .win h3 {
+  .containerMaelissResult .win h3 {
     font-size: 48px;
   }
-  .win::after {
+  .containerMaelissResult .win::after {
     box-shadow: inset 0px 0px 0px 13px white;
   }
 }
 @media (max-width: 1600px) {
-  .win h1 {
+  .containerMaelissResult .win h1 {
     font-size: 30px;
     text-shadow: -1px 0 #645AE3, 0 1px #645AE3, 1px 0 #645AE3, 0 -1px #645AE3;
   }
-  .win h3 {
+  .containerMaelissResult .win h3 {
     font-size: 41px;
   }
-  .win::after {
+  .containerMaelissResult .win::after {
     box-shadow: inset 0px 0px 0px 11px white;
   }
 }
 @media (max-width: 1400px) {
-  .win h1 {
+  .containerMaelissResult .win h1 {
     font-size: 25px;
   }
-  .win h3 {
+  .containerMaelissResult .win h3 {
     font-size: 34px;
   }
-  .win::after {
+  .containerMaelissResult .win::after {
     box-shadow: inset 0px 0px 0px 9px white;
   }
 }
-
-.maire {
+.containerMaelissResult .maire {
   position: absolute;
   top: 73vh;
   left: 50%;
@@ -203,7 +194,7 @@
   align-items: center;
   justify-content: center;
 }
-.maire h3 {
+.containerMaelissResult .maire h3 {
   font-size: 60px;
   color: #261F1F;
   display: flex;
@@ -211,36 +202,35 @@
   align-items: center;
   line-height: 1em;
 }
-.maire h3 span {
+.containerMaelissResult .maire h3 span {
   font-size: 80px;
   line-height: 1em;
 }
 @media (max-width: 1800px) {
-  .maire h3 {
+  .containerMaelissResult .maire h3 {
     font-size: 53px;
   }
-  .maire h3 span {
+  .containerMaelissResult .maire h3 span {
     font-size: 70px;
   }
 }
 @media (max-width: 1600px) {
-  .maire h3 {
+  .containerMaelissResult .maire h3 {
     font-size: 46px;
   }
-  .maire h3 span {
+  .containerMaelissResult .maire h3 span {
     font-size: 60px;
   }
 }
 @media (max-width: 1400px) {
-  .maire h3 {
+  .containerMaelissResult .maire h3 {
     font-size: 39px;
   }
-  .maire h3 span {
+  .containerMaelissResult .maire h3 span {
     font-size: 50px;
   }
 }
-
-.losersContainer {
+.containerMaelissResult .losersContainer {
   position: absolute;
   height: 28vw;
   width: 16vw;
@@ -252,12 +242,12 @@
   align-items: center;
   justify-content: center;
 }
-.losersContainer .losers {
+.containerMaelissResult .losersContainer .losers {
   position: relative;
   height: 100%;
   width: 40%;
 }
-.losersContainer .losers .percent {
+.containerMaelissResult .losersContainer .losers .percent {
   position: absolute;
   font-size: 23px;
   width: 4vw;
@@ -269,22 +259,22 @@
   padding: 0.3em 0;
 }
 @media (max-width: 1800px) {
-  .losersContainer .losers .percent {
+  .containerMaelissResult .losersContainer .losers .percent {
     font-size: 20px;
   }
 }
 @media (max-width: 1600px) {
-  .losersContainer .losers .percent {
+  .containerMaelissResult .losersContainer .losers .percent {
     font-size: 17px;
     border: 3px solid #261F1F;
   }
 }
 @media (max-width: 1400px) {
-  .losersContainer .losers .percent {
+  .containerMaelissResult .losersContainer .losers .percent {
     font-size: 14px;
   }
 }
-.losersContainer .losers div {
+.containerMaelissResult .losersContainer .losers div {
   position: absolute;
   height: 4vw;
   width: 20vw;
@@ -298,11 +288,11 @@
   align-items: center;
 }
 @media (max-width: 1600px) {
-  .losersContainer .losers div {
+  .containerMaelissResult .losersContainer .losers div {
     border: 3px solid #261F1F;
   }
 }
-.losersContainer .losers div h3 {
+.containerMaelissResult .losersContainer .losers div h3 {
   z-index: 1;
   font-size: 35px;
   padding-left: 1em;
@@ -311,21 +301,21 @@
   text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
 }
 @media (max-width: 1800px) {
-  .losersContainer .losers div h3 {
+  .containerMaelissResult .losersContainer .losers div h3 {
     font-size: 30px;
   }
 }
 @media (max-width: 1600px) {
-  .losersContainer .losers div h3 {
+  .containerMaelissResult .losersContainer .losers div h3 {
     font-size: 25px;
   }
 }
 @media (max-width: 1400px) {
-  .losersContainer .losers div h3 {
+  .containerMaelissResult .losersContainer .losers div h3 {
     font-size: 20px;
   }
 }
-.losersContainer .losers div .progressBar {
+.containerMaelissResult .losersContainer .losers div .progressBar {
   position: absolute;
   z-index: 0;
   top: 0;
@@ -335,13 +325,13 @@
   border-top-right-radius: 100px;
   border-bottom-right-radius: 100px;
 }
-.losersContainer .losers div .progressBar.one {
+.containerMaelissResult .losersContainer .losers div .progressBar.one {
   width: 36%;
 }
-.losersContainer .losers div .progressBar.two {
+.containerMaelissResult .losersContainer .losers div .progressBar.two {
   width: 22%;
 }
-.losersContainer .losers div::after {
+.containerMaelissResult .losersContainer .losers div::after {
   content: "";
   position: absolute;
   height: 100%;
@@ -350,12 +340,12 @@
   border-radius: 100px;
 }
 @media (max-width: 1800px) {
-  .losersContainer .losers div::after {
+  .containerMaelissResult .losersContainer .losers div::after {
     box-shadow: inset 0px 0px 0px 8px white;
   }
 }
 @media (max-width: 1400px) {
-  .losersContainer .losers div::after {
+  .containerMaelissResult .losersContainer .losers div::after {
     box-shadow: inset 0px 0px 0px 6px white;
   }
 }
