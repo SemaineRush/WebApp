@@ -3,20 +3,19 @@ export default {
     getToken: (email,password) => {
         return new Promise((resolve,reject) => {
             fetch("https://testsamheroku.herokuapp.com/api/auth/login", {
-                mode: 'no-cors',
                 method: 'POST',
                 headers: {
                     'Content-Type': "application/json"
                 },
-                body: JSON.stringify({"username":email ,"password":password })
+                body: JSON.stringify({"username": email ,"password": password })
             }).then((data) => {
                 data.json().then((json) => {
-
                     if (json.token) {
                         localStorage.setItem("token", json.token);
                         resolve(json)
                     } 
                 }).catch((errors)=>{
+                    reject(errors)
                     console.log(errors)
                 })
             })
