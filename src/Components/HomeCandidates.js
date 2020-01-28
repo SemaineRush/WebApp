@@ -18,23 +18,6 @@ export default class HomeCandidates extends Component {
 			});
 		});
 	}
-	// render() {
-	//     return (
-	//         <div className="homecandidates">
-	//         {this.state.candidates.map(candidate => {
-	//         return <div className="candidat">
-	// 					<div className="candidat_img" style={{backgroundColor: candidate.informations.color}}>
-	// 						<img alt="d" src={candidate.informations.image_url} />
-	// 					</div>
-	// 					<div className="candidat_info">
-	//                         <Link to={`/home/${candidate.informations.lastname}`}><h3>{candidate.informations.firstname} {candidate.informations.lastname}</h3></Link>
-	// 						<p>{candidate.informations.slogan}</p>
-	// 					</div>
-	// 				</div>
-	//         })}
-	//         </div>
-	//     )
-	// }
 	render() {
 		return (
 			<div className="homecandidates">
