@@ -119,7 +119,7 @@ const Maeliss = (props) => {
 					<div className="content content-two">
 						<span />
 						<a href="https://www.youtube.com/watch?v=W2G9eqCNG8Y&t=" target="_blank">
-							<h3>fast & curious</h3>
+							<h3>sup & curious</h3>
 							<p>de Maëliss</p>
 						</a>
 					</div>
