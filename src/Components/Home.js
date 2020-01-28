@@ -33,7 +33,7 @@ export default class Home extends Component {
                         
             <div className="candidat">
                 <div className="candidat_img">
-                    <img src="https://a-static.besthdwallpaper.com/one-piece-sanji-wano-kuni-arc-wallpaper-14833_L.jpg" />
+                    <img alt="candidat" src="https://a-static.besthdwallpaper.com/one-piece-sanji-wano-kuni-arc-wallpaper-14833_L.jpg" />
                 </div>
                 <div className="candidat_info">
                 <Link to="/home/maeliss"><h3>Maeliss TARAUD</h3></Link>

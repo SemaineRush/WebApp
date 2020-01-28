@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import '../Assets/maelissResult.css';
 import maeliss from '../Assets/media/maeliss/maeliss2.png';
 import palms from '../Assets/media/maeliss/palmier.png';
@@ -39,14 +39,14 @@ const maelissResult = () => {
 			<div className="squares">{createSquares(25).map((square) => square)}</div>
 
 			<span className="circle" />
-			<img className="palms" src={palms} />
-			<img className="maeliss" src={maeliss} />
+			<img className="palms" src={palms} alt="palms"/>
+			<img className="maeliss" src={maeliss} alt="maeliss" />
 
 			<div className="centerBand">
-				<img className="arrow" src={arrow} />
-				<img className="arrow" src={arrow} />
-				<img className="arrow" src={arrow} />
-				<img className="crown" src={crown} />
+				<img className="arrow" src={arrow} alt="arrow" />
+				<img className="arrow" src={arrow} alt="arrow" />
+				<img className="arrow" src={arrow} alt="arrow" />
+				<img className="crown" src={crown} alt="arrow" />
 			</div>
 
 			<div className="maire">

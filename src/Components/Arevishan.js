@@ -14,7 +14,7 @@ export default class Arevishan extends Component {
 			<div className="arevishContainer">
 				<div className="header">
 					<div className="image">
-						<img src={profile} />
+						<img alt="profile" src={profile} />
 					</div>
 					<h1>
 						Votez
@@ -22,7 +22,7 @@ export default class Arevishan extends Component {
 					</h1>
 					<div className="social">
 						<button>
-							<img src={fb} />
+							<img alt="facebook" src={fb} />
 						</button>
 						<button>
 							<TwitterIcon />
@@ -48,14 +48,14 @@ export default class Arevishan extends Component {
 							<h3>JE SUIS LE MAIRE QU’IL VOUS FAUT !</h3>
 							<p>Laissez-moi vous expliquer pourquoi :</p>
 							<div className="imgContainer">
-								<img src={img1} />
+								<img alt="ecole" src={img1} />
 							</div>
 							<p>
 								A l’aise avec les personnes qui m’entourent je sais prêter une oreille attentive aux
 								habitants qui en ont besoin. Avec moi vous vous sentez écouté.
 							</p>
 							<div className="imgContainer">
-								<img src={img2} />
+								<img alt="code" src={img2} />
 							</div>
 							<p>
 								Je suis une personne joyeuse dont la bonne humeur est intarissable. Energique et
@@ -63,7 +63,7 @@ export default class Arevishan extends Component {
 								animations
 							</p>
 							<div className="imgContainer">
-								<img src={img3} />
+								<img alt="Sri Lanka" src={img3} />
 							</div>
 							<p>
 								Né de parents Sri Lankais, je possède une double culture qui me permet de porter une
