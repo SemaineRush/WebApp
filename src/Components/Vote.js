@@ -1,10 +1,24 @@
 import React, { Component } from 'react'
 import '../Assets/vote.css'
 import Header from "./Header"
-
+import api from './Api';
 import VoteList from './VoteList';
 
 export default class Vote extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+    currentElectionId: '',
+    };
+  }
+
+  componentDidMount(){
+		api.getLastElection().then((json) => {
+			this.setState({
+        currentElectionId: json.response.last_election.id
+      })
+    })
+	}
     render() {
         return (
           <>
@@ -21,7 +35,7 @@ export default class Vote extends Component {
                 <p>Seléctionnez votre candidat parmi les différents votes possibles ci-dessous :</p>
               </div>
 
-              <VoteList />
+              <VoteList electionId={this.state.currentElectionId} />
             </div>
           </>
         )

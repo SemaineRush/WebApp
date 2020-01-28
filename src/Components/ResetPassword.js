@@ -16,7 +16,6 @@ export default class ResetPassword extends Component {
     handleSubmit(e) {
         e.preventDefault()
         api.ResetPassword(this.state.email).then((json) =>{
-            // this.props.changeStatus(true)
             console.log(json)
         })
     }
@@ -30,8 +29,10 @@ export default class ResetPassword extends Component {
                             placeholder="" 
                             className="form_input" 
                             name="email"
+                            type="email"
                             value={ this.state.email }
-                            onChange={ this.handleChange } 
+                            onChange={ this.handleChange }
+                            required
                         />
                     </div>
                     <button className="form_button" type="submit" >Envoyer</button>

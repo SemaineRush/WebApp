@@ -4,6 +4,14 @@ import '../Assets/home.css';
 import Header from './Header';
 
 export default class Home extends Component {
+	constructor(props) {
+        super(props);
+        this.state = {
+        email: "",
+        password: ""
+        };
+	}
+	
 	render() {
 		return (
 			<div>

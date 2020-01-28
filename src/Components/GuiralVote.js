@@ -121,7 +121,7 @@ export default class GuiralVote extends Component {
                     className="player"
                     height="85%"
                     width="100%"
-                    url='https://www.youtube.com/watch?v=m7SlTS8R2I0'
+                    url='https://www.youtube.com/watch?v=9fwgC1C7hT4&feature=youtu.be'
                     controls>
                     </ReactPlayer>
                 </div>
