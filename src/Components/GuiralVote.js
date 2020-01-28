@@ -1,3 +1,4 @@
+
 import React, { Component} from 'react'
 import Sup2020 from '../Assets/media/SUP2020.svg'
 import Profile from '../Assets/media/export.svg'
@@ -13,6 +14,7 @@ import articleCover from '../Assets/media/article_img.svg'
 import ReactPlayer from 'react-player'
 
 import '../Assets/guiralvote.css'
+
 
 mapboxgl.accessToken= "pk.eyJ1IjoiZ29sZGRtYWQiLCJhIjoiY2s1cXF4cnhqMDR5MzNtbmx1ZmZwa3k1diJ9.DB02Xu0QwgX3mikYn14-vA";
 
@@ -127,5 +129,4 @@ export default class GuiralVote extends Component {
         )
     }
 }
-
 
