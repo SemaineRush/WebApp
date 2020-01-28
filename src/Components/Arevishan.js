@@ -1,12 +1,13 @@
-import React, { Component } from 'react'
-import '../Assets/arevishan.css'
-import profile from '../Assets/media/arevishan/profile.png'
-import img1 from '../Assets/media/arevishan/img1.png'
-import img2 from '../Assets/media/arevishan/img2.png'
-import img3 from '../Assets/media/arevishan/img3.png'
-import fb from '../Assets/media/arevishan/fb.svg'
-import InstagramIcon from '@material-ui/icons/Instagram'
-import TwitterIcon from '@material-ui/icons/Twitter'
+import React, { Component } from 'react';
+import '../Assets/arevishan.css';
+import { Link } from 'react-router-dom';
+import profile from '../Assets/media/arevishan/profile.png';
+import img1 from '../Assets/media/arevishan/img1.png';
+import img2 from '../Assets/media/arevishan/img2.png';
+import img3 from '../Assets/media/arevishan/img3.png';
+import fb from '../Assets/media/arevishan/fb.svg';
+import InstagramIcon from '@material-ui/icons/Instagram';
+import TwitterIcon from '@material-ui/icons/Twitter';
 
 export default class Arevishan extends Component {
 	render() {
@@ -71,11 +72,11 @@ export default class Arevishan extends Component {
 								le respect de chacun et ce sont ces valeurs que je compte transmettre à la ville de Sup.
 							</p>
 						</div>
-						<button className="buttonVote">Voter</button>
+						<Link to="/vote">Voter</Link>
 					</div>
 				</div>
 				<div className="bg-blue" />
 			</div>
-		)
+		);
 	}
 }
