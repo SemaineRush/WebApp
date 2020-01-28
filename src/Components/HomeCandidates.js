@@ -1,26 +1,36 @@
-import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+
+import React, { Component } from 'react'
+import Loader from '../Assets/media/loader.gif';
+import { Link } from 'react-router-dom'
 import api from './Api';
 import '../Assets/home.css';
 
 export default class HomeCandidates extends Component {
-	constructor(props) {
-		super(props);
-		this.state = {
-			candidates: []
-		};
-	}
-	componentDidMount() {
-		api.getElections(this.props.CurrentElectionId).then((data) => {
-			// console.log(data);
-			this.setState({
-				candidates: data['hydra:member'][0].candidateElection
-			});
-		});
-	}
-	render() {
-		return (
-			<div className="homecandidates">
+    constructor(props) {
+        super(props);
+        this.state = {
+        candidates: [],
+        isLoaded: false
+        };
+    }
+    componentDidMount(){
+        api.getElections(this.props.CurrentElectionId).then((data) => {
+            this.setState({
+                candidates: data['hydra:member'][0].candidateElection,
+                isLoaded: true
+            })
+        })
+    }
+    render() {
+        if (this.state.isLoaded === false) {
+            return (
+                <div>
+                    <img src={Loader} />
+                </div>
+            )
+        } else {
+            return (
+            <div className="homecandidates">
 				{this.state.candidates.map((candidate) => {
 					return (
 						<Link className="candidat" to={`/home/${candidate.informations.lastname}`}>
@@ -39,6 +49,8 @@ export default class HomeCandidates extends Component {
 					);
 				})}
 			</div>
-		);
-	}
+        )
+        }
+        
+    }
 }
