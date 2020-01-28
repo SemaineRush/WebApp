@@ -1,0 +1,86 @@
+.arevishWin {
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    font-weight: 400;
+    background-color: #ffd02a;
+    background-image: url(../Assets/media/arevishan/bubbles_blue.svg);
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    max-width: 100vw;
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (max-width: 1500px) {
+    .arevishWin {
+        font-size: 18px;
+    }
+}
+
+.arevishWin .bg-blue {
+    background-color: #638cf7;
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    left: 0px;
+    border-radius: 0px 50% 0px 0px;
+    background-image: url(../Assets/media/arevishan/bubbles_yellow.svg);
+}
+
+.arevishWin h1 {
+    color: white;
+    font-size: 3em;
+    text-shadow: 0px 8px 0px #628ff7;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+}
+
+.arevishWin .background {
+    z-index: 1;
+    position: relative;
+    background-color: white;
+    height: 100%;
+    min-height: 100vh;
+    width: 80%;
+    transform: skewX(5deg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.arevishWin .container {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+}
+
+.arevishWin .container .borders {
+    width: 95%;
+    height: 100%;
+    border-left: 20px solid #ffd42a;
+    border-right: 20px solid #6489f7;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.arevishWin .content {
+    transform: skewX(-5deg);
+    max-height: 31em;
+    padding: 3em 6em 0px 6em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FFD42A;
+    background-image: url(../Assets/media/arevishan/bubbles_blue.svg);
+    background-repeat: repeat-x;
+    text-align: center;
+}
