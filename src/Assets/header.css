@@ -6,12 +6,16 @@
 
 header {
     height: 7vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     border-bottom: 1px solid #5F63D4;
     box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.20);
     background: #fff;
+}
+
+header a {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 header img {
