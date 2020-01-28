@@ -12,7 +12,7 @@ export default class HomeCandidates extends Component {
 	}
 	componentDidMount() {
 		api.getElections(this.props.CurrentElectionId).then((data) => {
-			console.log(data);
+			// console.log(data);
 			this.setState({
 				candidates: data['hydra:member'][0].candidateElection
 			});

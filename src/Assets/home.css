@@ -1,34 +1,35 @@
 .home {
     overflow: hidden;
     position: relative;
+    height: 93vh;
 }
 
 .top_left_yellow {
     background-color: #FFD02A;
     position: absolute;
-    width: 1500px;
-    height: 1500px;
+    width: 100vh;
+    height: 100vh;
     border-radius: 50%;
-    top: -1350px;
-    left: -750px;
+    top: -75vh;
+    left: -50vh;
     z-index: -1;
 }
 
 .bottom_left_pink {
     background-color: #FD475E;
     position: absolute;
-    width: 1500px;
-    height: 1500px;
+    width: 150vh;
+    height: 150vh;
     border-radius: 50%;
-    bottom: -850px;
-    left: -1250px;
+    bottom: -80vh;
+    left: -125vh;
 }
 
 .bottom_right_purple {
     background-color: #8388FF;
     position: absolute;
-    width: 1500px;
-    height: 1500px;
+    width: 100vh;
+    height: 100vh;
     border-radius: 50%;
     bottom: -850px;
     right: -1350px;
@@ -37,8 +38,8 @@
 .bottom_right_blue {
     background-color: #5F63D4;
     position: absolute;
-    width: 1500px;
-    height: 1500px;
+    width: 100vh;
+    height: 100vh;
     border-radius: 50%;
     bottom: -1100px;
     right: -1170px;
@@ -100,19 +101,19 @@
     padding-bottom: 10%;
 }
 
-.candidat_info p{
+.candidat_info p {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 20px;
     text-overflow: ellipsis;
     margin-top: 20px;
 }
 
-.candidat_info h3{
+.candidat_info h3 {
     font-size: 25px;
     margin-top: 20px;
 }
 
-.candidat_info a{
+.candidat_info a {
     color: #111;
     text-decoration: none;
 }
@@ -137,7 +138,7 @@
     cursor: pointer;
 }
 
-.homecandidates{
+.homecandidates {
     display: flex;
     align-items: center;
     justify-content: center;
