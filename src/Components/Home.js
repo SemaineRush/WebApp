@@ -40,11 +40,9 @@ export default class Home extends Component {
 						<h2>Election SUP'Internet</h2>
 						<h4>BDE 2020</h4>
 					</div>
-					<div className="vote_btn">
-						<Link to="/vote">
-							<button>Voter</button>
-						</Link>
-					</div>
+					<Link className="btn" to="/vote">
+						Voter
+					</Link>
 				</div>
 			</div>
 		);

@@ -27,11 +27,13 @@ export default class HomeCandidates extends Component {
 							<div className="candidat_img" style={{ backgroundColor: candidate.informations.color }}>
 								<img alt="d" src={candidate.informations.image_url} />
 							</div>
-							<div className="candidat_info">
-								<h3>
-									{candidate.informations.firstname} {candidate.informations.lastname}
-								</h3>
-								<p>{candidate.informations.slogan}</p>
+							<div className={`candidat_info ${candidate.informations.lastname}`}>
+								<div>
+									<h3>
+										{candidate.informations.firstname} {candidate.informations.lastname}
+									</h3>
+									<p>{candidate.informations.slogan}</p>
+								</div>
 							</div>
 						</Link>
 					);

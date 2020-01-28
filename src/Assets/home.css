@@ -73,14 +73,34 @@
 }
 
 .homecandidates {
+    width: 75%;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
 .candidat {
+    transition: 0.2s ease;
     width: 23vw;
     position: relative;
+    text-decoration: none;
+    color: black;
+}
+
+.candidat:hover {
+    margin-top: -50px;
+}
+
+.candidat:hover .Arudchelvan {
+    box-shadow: 0px 0px 11px 0px rgb(255, 205, 82);
+}
+
+.candidat:hover .Lapouge {
+    box-shadow: 0px 0px 11px 0px rgb(79, 153, 254);
+}
+
+.candidat:hover .Taraud {
+    box-shadow: 0px 0px 11px 0px rgb(245, 125, 130);
 }
 
 .candidat_img {
@@ -97,60 +117,63 @@
 }
 
 .candidat_img img {
-    top: 0;
+    bottom: 0;
     position: absolute;
-    height: 100%;
+    height: 85%;
     border: none;
 }
 
 .candidat_info {
+    position: relative;
+    transition: 0.2s ease;
     border-radius: 5px;
     position: relative;
     margin-top: 50%;
+    height: 40vh;
     box-shadow: 0px 0px 11px 0px rgba(217, 217, 217, 1);
     background-color: #FFF;
-    padding-top: 53%;
-    padding-right: 5%;
-    padding-left: 5%;
-    padding-bottom: 10%;
 }
 
-.candidat_info p {
+.candidat_info div {
+    position: absolute;
+    width: 90%;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.candidat_info div h3 {
+    font-size: 25px;
+}
+
+.candidat_info div p {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 20px;
     text-overflow: ellipsis;
-    margin-top: 20px;
+    margin-top: 0.5em;
 }
 
-.candidat_info h3 {
-    font-size: 25px;
-    margin-top: 20px;
-}
-
-.candidat_info a {
-    color: #111;
+.btn {
+    position: absolute;
+    transition: 0.15s ease;
+    bottom: 5%;
     text-decoration: none;
-}
-
-
-.vote_btn {
-    display: none;
-    grid-column-start: 3;
-    grid-row-start: 3;
-    margin-top: 45%;
-    margin-bottom: 20px;
-}
-
-.vote_btn button {
+    color: white;
     background-color: #5F63D4;
-    color: #FFF;
-    font-weight: bold;
-    font-size: 20px;
-    padding: 10px 35%;
+    border: 2px solid #5F63D4;
+    font-size: 23px;
+    padding: 0.5em 0;
+    width: 20vw;
     border-radius: 50px;
-    border: none;
-    outline: none;
+    margin-top: 100px;
+    box-shadow: 0 0 10px 0 rgba(95, 67, 67, 0.5);
+}
+
+.btn:hover {
     cursor: pointer;
+    box-shadow: none;
+    color: #5F63D4;
+    background-color: white;
 }
 
 @media (max-width: 1800px) {
@@ -160,6 +183,18 @@
 
     .yellow_top h4 {
         font-size: 22px;
+    }
+
+    .candidat_info div h3 {
+        font-size: 22px;
+    }
+
+    .candidat_info div p {
+        font-size: 18px;
+    }
+
+    .btn {
+        font-size: 20px;
     }
 }
 
@@ -171,6 +206,18 @@
     .yellow_top h4 {
         font-size: 19px;
     }
+
+    .candidat_info div h3 {
+        font-size: 19px;
+    }
+
+    .candidat_info div p {
+        font-size: 16px;
+    }
+
+    .btn {
+        font-size: 17px;
+    }
 }
 
 @media (max-width: 1400px) {
@@ -180,5 +227,17 @@
 
     .yellow_top h4 {
         font-size: 16px;
+    }
+
+    .candidat_info div h3 {
+        font-size: 16px;
+    }
+
+    .candidat_info div p {
+        font-size: 13px;
+    }
+
+    .btn {
+        font-size: 14px;
     }
 }
