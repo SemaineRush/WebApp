@@ -1,5 +1,5 @@
 .home {
-    height: 93vh;
+    min-height: 93vh;
     overflow: hidden;
     display: grid;
     grid-template-columns: 0.7fr 1fr 1fr 1fr 0.7fr;
@@ -70,6 +70,7 @@
 }
 
 .candidat {
+    cursor: pointer;
     margin-left: 20px;
     margin-right: 20px;
     position: relative;
@@ -94,6 +95,7 @@
     top: 0;
     position: absolute;
     height: 100%;
+    border: none;
 }
 
 .candidat_info {
@@ -107,9 +109,26 @@
     padding-bottom: 10%;
 }
 
+.candidat_info p{
+    text-overflow: ellipsis;
+    margin-top: 20px;
+}
+
+.candidat_info h3{
+    margin-top: 20px;
+}
+
+.candidat_info a{
+    color: #111;
+    text-decoration: none;
+}
+
+
 .vote_btn {
     grid-column-start: 3;
     grid-row-start: 3;
+    margin-top: 45%;
+    margin-bottom: 20px;
 }
 
 .vote_btn button {
@@ -119,8 +138,9 @@
     font-size: 20px;
     padding: 10px 35%;
     border-radius: 50px;
-    margin-top: 20%;
-
+    border: none;
+    outline: none;
+    cursor: pointer;
 }
 
 

@@ -1,0 +1,201 @@
+.arevishContainer {
+	font-family: Montserrat, Arial, Helvetica, sans-serif;
+	font-size: 25px;
+	font-weight: 400;
+	background-color: #ffd02a;
+	background-image: url(../Assets/media/arevishan/bubbles_blue.svg);
+	width: 100%;
+	height: 100%;
+	min-height: 150vh;
+	max-width: 100vw;
+	padding: 0px;
+	margin: 0px;
+	overflow: hidden;
+	position: relative;
+}
+@media only screen and (max-width: 1500px) {
+	.arevishContainer {
+		font-size: 18px;
+	}
+}
+
+.arevishContainer .bg-blue {
+	background-color: #638cf7;
+	width: 100%;
+	height: 50%;
+	position: absolute;
+	bottom: 0px;
+	border-radius: 0px 50% 0px 0px;
+	background-image: url(../Assets/media/arevishan/bubbles_yellow.svg);
+}
+
+.arevishContainer h1 {
+	color: white;
+	font-size: 5em;
+	text-shadow: 0px 8px 0px #628ff7;
+	text-transform: uppercase;
+	display: flex;
+	flex-direction: column;
+	align-self: flex-start;
+}
+
+.arevishContainer h1 span {
+	font-size: .65em;
+	margin-top: -.3em;
+}
+
+.arevishContainer h2 {
+	margin-top: 2em;
+	margin-bottom: 1em;
+	font-size: 1.5em;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	width: 90%;
+}
+
+.arevishContainer h2 span {
+	font-size: 0.5em;
+	font-style: italic;
+	font-weight: 500;
+}
+
+.arevishContainer h3 {
+	color: #6586f7;
+	font-size: 1.65em;
+}
+
+.arevishContainer .italic {
+	font-style: italic;
+	font-weight: 500;
+}
+
+.arevishContainer .image {
+	height: 11em;
+	width: 11em;
+	border-radius: 2.5em;
+	overflow: hidden;
+	z-index: 2;
+	margin: 4em 0px;
+}
+
+.arevishContainer img {
+	max-width: 100%;
+}
+
+.arevishContainer .header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0px 3em -8.5em 3em;
+}
+
+.arevishContainer .social {
+	display: flex;
+	justify-content: space-between;
+	width: 8em;
+	margin-bottom: 1em;
+	min-width: 180px;
+}
+
+.arevishContainer .social button {
+	height: 4em;
+	width: 4em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: white;
+	border: none;
+	border-radius: 8em;
+	color: #5294ff;
+}
+.arevishContainer .social button img {
+	height: 1em;
+}
+.arevishContainer .social button * {
+	max-height: 100%;
+	font-size: 3em;
+}
+
+.arevishContainer .background {
+	z-index: 1;
+	position: relative;
+	background-color: white;
+	height: 100%;
+	min-height: 150vh;
+	width: 100%;
+	transform: skewX(5deg);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.arevishContainer .container {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	position: absolute;
+}
+
+.arevishContainer .container .borders {
+	width: 95%;
+	height: 100%;
+	border-left: 20px solid #ffd42a;
+	border-right: 20px solid #6489f7;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.arevishContainer .content {
+	transform: skewX(-5deg);
+	position: relative;
+	margin-top: 0px;
+	max-width: 55%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	text-align: left;
+}
+
+.arevishContainer .text {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	margin-top: 3.5em;
+	text-align: left;
+}
+
+.arevishContainer .text p {
+	margin: 1.2em;
+}
+
+.arevishContainer .text .imgContainer {
+	margin-top: 6em;
+	border: 2px solid #ffd02a;
+	height: 760px;
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.arevishContainer .imgContainer img {
+	position: absolute;
+	top: 55%;
+	transform: translateY(-50%);
+}
+
+.arevishContainer .content button {
+	background-color: #ffd02a;
+	box-shadow: 0px 0px 20px #5f63d4;
+	padding: 0.6em 8.4em;
+	border: none;
+	border-radius: 8em;
+	color: white;
+	align-self: center;
+	margin: 8em 0px 4em 0px;
+}
