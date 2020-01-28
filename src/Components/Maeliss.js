@@ -39,29 +39,29 @@ const Maeliss = (props) => {
 
 	return (
 		<div className="containerMaeliss">
-			<img src={waveOne} className="wave-one" />
+			<img src={waveOne} className="wave-one" alt="waveOne"/>
 
 			<section className="part-one">
 				<span className="squareSkew" />
-				<img src={whiteLines} className="white-lines" />
-				<img src={arrowOne} className="arrow-one" />
-				<img src={arrowTwo} className="arrow-two" />
-				<img src={paf} className="paf" />
+				<img src={whiteLines} className="white-lines" alt="whiteLines" />
+				<img src={arrowOne} className="arrow-one" alt="arrow"/>
+				<img src={arrowTwo} className="arrow-two" alt="arrow" />
+				<img src={paf} className="paf" alt="paf"/>
 
 				<p className="p-one">leader de confiance</p>
 				<p className="p-two">multiculturelle</p>
 
 				<div className="boom">
-					<img src={bubbleOne} />
+					<img src={bubbleOne} alt="bubbleOne"/>
 					<p>dynamique</p>
 				</div>
 				<div className="envelope">
-					<img src={enveloppe} />
+					<img src={enveloppe} alt="enveloppe"/>
 					<p>votez</p>
 				</div>
 
 				<div className="bubble">
-					<img src={bubbleTwo} />
+					<img src={bubbleTwo} alt="bubbleTwo"/>
 					<h1>
 						maëliss<br />taraud<br />
 						<span>
@@ -72,7 +72,7 @@ const Maeliss = (props) => {
 
 				<div className="card card-three">
 					<div className="img">
-						<img src={profil} />
+						<img src={profil} alt="profil"/>
 					</div>
 					<p>
 						ensemble vers<br /> l'avenir
@@ -80,7 +80,7 @@ const Maeliss = (props) => {
 				</div>
 				<div className="card card-two">
 					<div className="img">
-						<img src={profil} />
+						<img src={profil} alt="profil"/>
 					</div>
 					<p>
 						ensemble vers<br /> l'avenir
@@ -88,7 +88,7 @@ const Maeliss = (props) => {
 				</div>
 				<div className="card">
 					<div className="img">
-						<img src={profil} />
+						<img src={profil} alt="profil"/>
 					</div>
 					<p>
 						ensemble vers<br /> l'avenir
@@ -172,13 +172,13 @@ const Maeliss = (props) => {
 			</section>
 
 			<section className="part-four">
-				<img src={waveTwo} className="wave-two" />
-				<img className="arrow" src={arrowThree} />
+				<img src={waveTwo} className="wave-two" alt="waveTwo"/>
+				<img className="arrow" src={arrowThree} alt="arrow"/>
 				<div>
 					<h3>Faites le choix</h3>
 					<h2>maëliss</h2>
 				</div>
-				<img className="arrow" src={arrowFour} />
+				<img className="arrow" src={arrowFour} alt="arrow"/>
 			</section>
 
 			<section className="part-five">
@@ -195,17 +195,18 @@ const Maeliss = (props) => {
 						height="85%"
 						width="100%"
 						url='https://www.youtube.com/watch?v=m7SlTS8R2I0'
-						controls>
+						controls
+						>
 						</ReactPlayer>
 						<div className="bubble">
-							<img src={bubbleThree} />
+							<img src={bubbleThree} alt="bubbleThree"/>
 							<p>
 								Retrouvez Maëliss<span>en vidéo</span>
 							</p>
 						</div>
 						<div className="video">
 							<button>
-								<img src="" />
+								<img src="" alt="e" />
 							</button>
 						</div>
 					</div>
@@ -215,24 +216,24 @@ const Maeliss = (props) => {
 
 					<div className="socialContainer">
 						<div className="bubble">
-							<img src={bubbleThree} />
+							<img src={bubbleThree} alt="bubbleThree"/>
 							<p>
 								Retrouvez Maëliss<span>sur les réseaux</span>
 							</p>
 						</div>
-						<a href="" className="social">
-							<img src={insta} alt="instagram" />
+						<a href="/" className="social">
+							<img src={insta} alt="instagram"/>
 							<p className="insta">IG_maelT</p>
 						</a>
-						<a href="" className="social">
+						<a href="/" className="social">
 							<img src={snap} alt="snapchat" />
 							<p className="snap">mealmaire</p>
 						</a>
-						<a href="" className="social">
+						<a href="/" className="social">
 							<img src={twitter} alt="twitter" />
 							<p className="twitter">mayocurly</p>
 						</a>
-						<a href="" className="social">
+						<a href="/" className="social">
 							<img src={youtube} alt="youtube" />
 							<p className="youtube">mael_maire</p>
 						</a>
@@ -249,9 +250,9 @@ const Maeliss = (props) => {
 
 			<section className="part-six">
 				<div>
-					<img src={mouth} />
-					<img src={mouth} />
-					<img src={mouth} />
+					<img src={mouth} alt="bouche"  />
+					<img src={mouth} alt="bouche" />
+					<img src={mouth} alt="bouche" />
 				</div>
 
 				<div>
@@ -260,9 +261,9 @@ const Maeliss = (props) => {
 				</div>
 
 				<div>
-					<img src={mouth} />
-					<img src={mouth} />
-					<img src={mouth} />
+					<img src={mouth} alt="bouche"/>
+					<img src={mouth} alt="bouche"/>
+					<img src={mouth} alt="bouche"/>
 				</div>
 			</section>
 		</div>
