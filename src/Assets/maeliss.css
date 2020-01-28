@@ -327,7 +327,7 @@
   background-color: #261F1F;
   z-index: 0;
 }
-.containerMaeliss .part-two .container .content-two button {
+.containerMaeliss .part-two .container .content-two a {
   position: absolute;
   transition: 0.2s ease;
   top: 50%;
@@ -338,33 +338,38 @@
   background: linear-gradient(45deg, #02FF80 5%, #81FFC0 5%, #81FFC0 15%, #02FF80 15%, #02FF80 25%, #81FFC0 25%, #81FFC0 35%, #02FF80 35%, #02FF80 45%, #81FFC0 45%, #81FFC0 55%, #02FF80 55%, #02FF80 65%, #81FFC0 65%, #81FFC0 75%, #02FF80 75%, #02FF80 85%, #81FFC0 85%, #81FFC0 95%, #02FF80 95%, #02FF80);
   z-index: 1;
   border: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
 }
-.containerMaeliss .part-two .container .content-two button h3 {
+.containerMaeliss .part-two .container .content-two a h3 {
   text-transform: uppercase;
   font-size: 50px;
 }
-.containerMaeliss .part-two .container .content-two button p {
+.containerMaeliss .part-two .container .content-two a p {
   font-size: 30px;
 }
-.containerMaeliss .part-two .container .content-two button:hover {
+.containerMaeliss .part-two .container .content-two a:hover {
   cursor: pointer;
   top: 52%;
   left: 52%;
   transform: translate(-50%, -50%);
 }
 @media (max-width: 1800px) {
-  .containerMaeliss .part-two .container .content-two button h3 {
+  .containerMaeliss .part-two .container .content-two a h3 {
     font-size: 40px;
   }
-  .containerMaeliss .part-two .container .content-two button p {
+  .containerMaeliss .part-two .container .content-two a p {
     font-size: 25px;
   }
 }
 @media (max-width: 1400px) {
-  .containerMaeliss .part-two .container .content-two button h3 {
+  .containerMaeliss .part-two .container .content-two a h3 {
     font-size: 30px;
   }
-  .containerMaeliss .part-two .container .content-two button p {
+  .containerMaeliss .part-two .container .content-two a p {
     font-size: 20px;
   }
 }
@@ -556,25 +561,6 @@
 .containerMaeliss .part-five .middle .videoContainer .bubble {
   top: -3vw;
   left: 1vw;
-}
-.containerMaeliss .part-five .middle .videoContainer .video {
-  position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 1;
-  height: 24vw;
-  width: 80%;
-}
-.containerMaeliss .part-five .middle .videoContainer .video video {
-  height: 100%;
-}
-.containerMaeliss .part-five .middle .videoContainer .video button {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  background-color: #261F1F;
-  border: none;
 }
 .containerMaeliss .part-five .middle .socialContainer {
   position: relative;
