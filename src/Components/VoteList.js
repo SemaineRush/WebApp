@@ -18,7 +18,6 @@ export default class VoteList extends Component {
         this.setState({
           candidates: data['hydra:member'][0].candidateElection
         })
-      
     })
   }
 
@@ -64,7 +63,7 @@ export default class VoteList extends Component {
                     <label className="candidate-button" htmlFor={0}></label>
                   </div>
               </div>
-              </div>
+            </div>
             <div className="voteBottomContent">
               <p>
                 <img src={lock} alt="lock"/> Vote sécurisé,  cybersécurité 100% <br/>
