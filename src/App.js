@@ -10,8 +10,15 @@ import are from './Components/ArevishanWin';
 import GuiralVote from './Components/GuiralVote';
 import ResetPassword from './Components/ResetPassword'
 import ArevishanWin from './Components/ArevishanWin'
-import {BrowserRouter as Router, Route} from 'react-router-dom';
+import {BrowserRouter as Router, Route, Redirect} from 'react-router-dom';
 
+const PrivateRoute = ({ component: Component, ...rest }) => (
+  <Route {...rest} render={(props) => (
+      localStorage.getItem('token')
+      ? <Component {...props} />
+      : <Redirect to='/' />
+  )} />
+)
 
 function App() {
   return (
@@ -19,14 +26,14 @@ function App() {
       <Router>
         <div className="App">
           <Route exact path="/" component={ Sign } />
-          <Route exact path="/vote" component={ Vote } />
-          <Route exact path="/home" component={ Home } />
-          <Route exact path="/results/maeliss" component={ maelissResult } />
-          <Route exact path="/results/arevishan" component={ ArevishanWin } />
-          <Route exact path="/home/Taraud" component={ Maeliss } />
-          <Route exact path="/home/Arudchelvan" component={ Arevishan } />
-          <Route exact path="/home/Lapouge" component={ GuiralVote } />
-          <Route exact path="/win/arevichan" component={ are } />
+          <PrivateRoute exact path="/vote" component={ Vote } />
+          <PrivateRoute exact path="/home" component={ Home } />
+          <PrivateRoute exact path="/results/maeliss" component={ maelissResult } />
+          <PrivateRoute exact path="/results/arevishan" component={ ArevishanWin } />
+          <PrivateRoute exact path="/home/Taraud" component={ Maeliss } />
+          <PrivateRoute exact path="/home/Arudchelvan" component={ Arevishan } />
+          <PrivateRoute exact path="/home/Lapouge" component={ GuiralVote } />
+          <PrivateRoute exact path="/win/arevichan" component={ are } />
           <Route exact path="/reset" component={ ResetPassword } />
         </div>
       </Router>
