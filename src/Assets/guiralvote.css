@@ -181,7 +181,6 @@
     flex-direction: column;
     padding: 50px;
     justify-content: space-evenly;
-    max-width: 45%;
 }
 
 .actuality .feed h3 {
@@ -273,18 +272,62 @@
 
 .actuality .map {
     position: relative;
+    overflow: hidden;
     height: 100%;
+    width: 100%;
+    display: flex;
+    align-self: center;
+    justify-content: center;
 }
 
 .mapContainer {
     position: absolute;
+    top: 50%;
+    left: -50%;
+    transform: translate(0, -50%);
     height: 100%;
     width: 100%;
-    left: -540px;
 }
 
 .media {
     background-color: #4237CA;
     display: grid;
     grid-template-columns: 1.2fr 1fr;
+}
+
+.media .socials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.media .socials>div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 60%;
+    margin-bottom: 50px;
+}
+
+.media .socials div h3 {
+    font-size: 35px;
+    color: white;
+    margin-bottom: 1em;
+}
+
+.media .socials div div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 55%;
+}
+
+.media .socials div div a {
+    transition: 0.15s ease;
+}
+
+.media .socials div div a:hover {
+    cursor: pointer;
+    opacity: 0.5;
 }

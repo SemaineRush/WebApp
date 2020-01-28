@@ -11,6 +11,10 @@ import mapboxgl from 'mapbox-gl';
 import Vector1 from '../Assets/media/Vector18.svg';
 import articleCover from '../Assets/media/article_img.svg';
 import ReactPlayer from 'react-player';
+import youtube from '../Assets/media/guiral/youtubeGuiral.svg';
+import facebook from '../Assets/media/guiral/facebookGuiral.svg';
+import twitter from '../Assets/media/guiral/twitterGuiral.svg';
+import snap from '../Assets/media/guiral/snapGuiral.svg';
 
 import '../Assets/guiralvote.css';
 
@@ -170,7 +174,25 @@ export default class GuiralVote extends Component {
 					</div>
 				</div>
 				<div className="media">
-					<div />
+					<div className="socials">
+						<div>
+							<h3>Suivez notre campagne</h3>
+							<div>
+								<a href="#">
+									<img src={youtube} />
+								</a>
+								<a href="#">
+									<img src={facebook} />
+								</a>
+								<a href="#">
+									<img src={twitter} />
+								</a>
+								<a href="#">
+									<img src={snap} />
+								</a>
+							</div>
+						</div>
+					</div>
 
 					<ReactPlayer
 						className="player"
