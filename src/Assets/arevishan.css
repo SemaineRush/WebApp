@@ -13,6 +13,7 @@
 	overflow: hidden;
 	position: relative;
 }
+
 @media only screen and (max-width: 1500px) {
 	.arevishContainer {
 		font-size: 18px;
@@ -109,9 +110,11 @@
 	border-radius: 8em;
 	color: #5294ff;
 }
+
 .arevishContainer .social button img {
 	height: 1em;
 }
+
 .arevishContainer .social button * {
 	max-height: 100%;
 	font-size: 3em;
@@ -189,13 +192,22 @@
 	transform: translateY(-50%);
 }
 
-.arevishContainer .content button {
+.arevishContainer .content a {
+	transition: 0.15s ease;
 	background-color: #ffd02a;
-	box-shadow: 0px 0px 20px #5f63d4;
-	padding: 0.6em 8.4em;
-	border: none;
-	border-radius: 8em;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+	border: 2px solid #ffd02a;
+	padding: 0.4em 8.4em;
+	border-radius: 50px;
 	color: white;
 	align-self: center;
 	margin: 8em 0px 4em 0px;
+	text-decoration: none;
+}
+
+.arevishContainer .content a:hover {
+	cursor: pointer;
+	box-shadow: none;
+	background-color: white;
+	color: #ffd02a;
 }
