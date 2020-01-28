@@ -1,11 +1,14 @@
-import React , { Component }  from 'react';
+import React from 'react';
 
 import Home from './Components/Home';
 import Vote from './Components/Vote';
 import Sign from './Components/Sign';
+import maelissResult from './Components/maelissResult';
+import Maeliss from './Components/Maeliss';
 import Arevishan from './Components/Arevishan';
 import are from './Components/ArevishanWin';
 import GuiralVote from './Components/GuiralVote';
+import ResetPassword from './Components/ResetPassword'
 import {BrowserRouter as Router, Route} from 'react-router-dom';
 
 
@@ -17,9 +20,12 @@ function App() {
           <Route exact path="/" component={ Sign } />
           <Route exact path="/vote" component={ Vote } />
           <Route exact path="/home" component={ Home } />
+          <Route exact path="/results" component={ maelissResult } />
+          <Route exact path="/home/maeliss" component={ Maeliss } />
           <Route exact path="/home/arevishan" component={ Arevishan } />
           <Route exact path="/win/arevishan" component={ are } />
           <Route exact path="/home/guiral" component={ GuiralVote } />
+            <Route exact path="/reset" component={ ResetPassword } />
         </div>
       </Router>
     </>
