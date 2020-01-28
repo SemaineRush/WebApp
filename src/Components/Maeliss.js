@@ -251,7 +251,7 @@ const Maeliss = (props) => {
 				</div>
 
 				<div>
-					<Link>votez !</Link>
+					<Link to="/vote">votez !</Link>
 					<span />
 				</div>
 
