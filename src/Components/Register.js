@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import swal from 'sweetalert';
 import '../Assets/register.css'
 import api from './Api'
 
@@ -19,11 +20,18 @@ export default class Register extends Component {
     }
 
     handleSubmit(e) {
-        e.preventDefault()
-        api.Register(this.state.firstname, this.state.lastname, this.state.email, this.state.password).then((json) =>{
+        e.preventDefault();
+        if ( !this.state.firstname || !this.state.lastname || !this.state.email || !this.state.password ) {
+            
+            swal("EMpty input", "Please fill all the informations", "error");
+        } else {
+            api.Register(this.state.firstname, this.state.lastname, this.state.email, this.state.password).then((json) =>{
             // this.props.changeStatus(true)
             console.log(json)
-        })
+            })
+        }
+            
+        
     }
         
     render() {
@@ -39,6 +47,7 @@ export default class Register extends Component {
                             name="lastname"
                             value={ this.state.nom }
                             onChange={ this.handleChange } 
+                            
                         />
                     </div>
                     <div className="form_line register">
@@ -49,6 +58,7 @@ export default class Register extends Component {
                             name="firstname"
                             value={ this.state.prenom }
                             onChange={ this.handleChange } 
+                            
                         />
                     </div>
                     <div className="form_line register">
@@ -59,6 +69,7 @@ export default class Register extends Component {
                             name="email"
                             value={ this.state.email }
                             onChange={ this.handleChange } 
+                            
                         />
                     </div>
                     <div className="form_line register">
@@ -71,11 +82,12 @@ export default class Register extends Component {
                             name="password"
                             value={ this.state.password }
                             onChange={ this.handleChange } 
+                            
                         />
                     </div>
                     <div className="form_line register">
                         <h3>confirmation mot de passe</h3>
-                        <input placeholder="" className="form_input" type="password" autoComplete="on"/>
+                        <input placeholder="" className="form_input" type="password" autoComplete="on"  />
                     </div>
                     <button className="form_button" type="submit">Inscription</button>
                 </form>
