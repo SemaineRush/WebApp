@@ -1,4 +1,4 @@
-import React, { Component, useState } from 'react'
+import React, { Component} from 'react'
 import Sup2020 from '../Assets/media/SUP2020.svg'
 import Profile from '../Assets/media/export.svg'
 import arrow1 from '../Assets/media/Group32.svg'
@@ -26,23 +26,20 @@ export default class GuiralVote extends Component {
         };
     }
     componentDidMount() {
-
-        
-
         const map = new mapboxgl.Map({
-        container: this.mapContainer,
-        style: 'mapbox://styles/golddmad/ck5tfzef20m3u1ippfmjrf59s',
-        center: [this.state.lng, this.state.lat],
-        zoom: this.state.zoom
+            container: this.mapContainer,
+            style: 'mapbox://styles/golddmad/ck5tfzef20m3u1ippfmjrf59s',
+            center: [this.state.lng, this.state.lat],
+            zoom: this.state.zoom
         });
-        }
+    }
 
     render() {
         return (
             <div className='guiral_home'>
                 <div className="programme_pt1">
                     <div className="left_pt">
-                        <img  src={Profile} />
+                        <img alt="profile" src={Profile} />
                         <h1>Des idées<br /> d’aujourd’hui<br /> naissent<br /> les projets<br /> de demain.</h1>
                     </div>
                     <div className="right_pt">
@@ -58,7 +55,7 @@ export default class GuiralVote extends Component {
                             <p> Nous aménagerons une <b>salle</b> qui sera dédiée au <b>sport</b>.</p>
                             <p> Vous voulez <b>des bonbons</b> ? Il y aura bien plus que ça !</p>
                             <p> … et plus encore.</p>
-                            <img src={ Sup2020 } />
+                            <img alt="SUP" src={ Sup2020 } />
                         </div>
                         
                     </div>
@@ -74,21 +71,21 @@ export default class GuiralVote extends Component {
                 </div>
                 <div className="chronology">
                     <div className="p2020_1">
-                        <img src={Vector1} />
-                        <img src={P2020} />
+                        <img alt="Vector" src={Vector1} />
+                        <img alt="P2020" src={P2020} />
                     </div>
                     <div className="p2020_2">
-                        <img src={Vector1} />
-                        <img src={P2020} />
+                        <img alt="Vector" src={Vector1} />
+                        <img alt="P2020" src={P2020} />
                     </div>
                     <h4>Création de salle de coworking</h4>
-                    <img className="arrow_month" src={arrow1} />
+                    <img className="arrow_month" alt="arrow_month" src={arrow1} />
                     <h4>Création service restauration</h4>
-                    <img className="arrow_month" src={arrow2} />
+                    <img className="arrow_month" alt="arrow_month" src={arrow2} />
                     <h4>Amenagement de salle de sport</h4>
-                    <img className="arrow_month" src={arrow3} />
+                    <img className="arrow_month" alt="arrow_month" src={arrow3} />
                     <h4>organisation de compétitions sportives</h4>
-                    <img className="arrow_month" src={arrow5} /><img className="arrow" src={arrow4}/>
+                    <img className="arrow_month" alt="arrow_month" src={arrow5} /><img className="arrow" alt="arrow_month" src={arrow4}/>
                 </div>
                 <div className="actuality">
                     <div className="map" >
@@ -98,14 +95,14 @@ export default class GuiralVote extends Component {
                     <div className="feed">
                         <h3>Toute l'actualité</h3>
                         <div className="article">
-                            <img src={ articleCover } />
+                            <img src={ articleCover } alt="articleCover" />
                             <div className="article_content">
                                 <h4>Campagne éléctorale 2020</h4>
                                 <p>Lancement de la campagne éléctorale pour les municipales de SUP’Internet 2020. Demandez votre documentation pour comprendre notre programme.</p>
                             </div>
                         </div>
                         <div className="article">
-                            <img src={ articleCover } />
+                            <img src={ articleCover } alt="articleCover"/>
                             <div className="article_content">
                                 <h4>Campagne éléctorale 2020</h4>
                                 <p>Lancement de la campagne éléctorale pour les municipales de SUP’Internet 2020. Demandez votre documentation pour comprendre notre programme.</p>
@@ -121,8 +118,9 @@ export default class GuiralVote extends Component {
                     className="player"
                     height="85%"
                     width="100%"
-                    url='https://www.youtube.com/watch?v=9fwgC1C7hT4&feature=youtu.be'
-                    controls>
+                    url='https://www.youtube.com/watch?v=m7SlTS8R2I0'
+                    controls
+                    >
                     </ReactPlayer>
                 </div>
             </div>
