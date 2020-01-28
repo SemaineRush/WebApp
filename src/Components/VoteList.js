@@ -15,9 +15,10 @@ export default class VoteList extends Component {
   }
   componentDidMount(){
     api.getElections(this.props.electionId).then((data) => {
-      this.setState({
-        candidates: data['hydra:member'][0].candidateElection
-      })
+        this.setState({
+          candidates: data['hydra:member'][0].candidateElection
+        })
+      
     })
   }
 
