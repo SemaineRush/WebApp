@@ -1,45 +1,53 @@
-import React, { Component } from 'react'
-import '../Assets/vote.css'
-import api from './Api'
-import swal from 'sweetalert'
-import lock from '../Assets/media/lock.png'
+
+import React, { Component } from 'react';
+import Loader from '../Assets/media/loader.gif';
+import '../Assets/vote.css';
+import api from './Api';
+import swal from 'sweetalert';
+import lock from '../Assets/media/lock.png';
 import people from '../Assets/media/people.png'
 
 export default class VoteList extends Component {
-	constructor(props) {
-		super(props)
-		this.state = {
-			candidates: [],
-			chosenCandidat: ''
-		}
-	}
-	componentDidMount() {
-		api.getElections(this.props.electionId).then((data) => {
-			this.setState({
-				candidates: data['hydra:member'][0].candidateElection
-			})
-		})
-	}
+  constructor(props) {
+    super(props);
+    this.state = {
+      candidates: [],
+      chosenCandidat: '',
+      isLoaded: false
+    };
+  }
+  componentDidMount(){
+    api.getElections(this.props.electionId).then((data) => {
+        this.setState({
+          candidates: data['hydra:member'][0].candidateElection,
+          isLoaded: true
+        })
+    })
+  }
 
 	handleOptionChange = (e) => {
 		this.setState({
 			chosenCandidat: e.target.value
-		})
-		swal('Vous aller votez pour', e.target.candidat)
-		setTimeout(() => {
-			console.log(this.state.chosenCandidat)
-		}, 100)
-	}
-
-	handleSubmit(e) {
-		e.preventDefault()
-		api.vote(this.props.electionId, this.state.chosenCandidat).then((json) => {
-			console.log(json)
-		})
-	}
-	render() {
-		return (
-			<form className="form_vote_list" onSubmit={this.handleSubmit.bind(this)}>
+    });
+    swal("Vous aller votez pour", e.target.candidat);
+    
+  };
+  
+  handleSubmit(e) {
+    e.preventDefault()
+    api.vote(this.props.electionId,this.state.chosenCandidat).then((json) => {
+    })
+}
+    render() {
+      if (this.state.isLoaded === false) {
+        return (
+          <div>
+            <img src={Loader} />
+          </div>
+        )
+      } else {
+        return (
+          <form className="form_vote_list" onSubmit={this.handleSubmit.bind(this)}>
 				<div className="vote-list">
 					{this.state.candidates.map((candidate) => {
 						return (
@@ -87,6 +95,7 @@ export default class VoteList extends Component {
 					<input type="submit" className="vote-button" value="voter" />
 				</div>
 			</form>
-		)
-	}
+        )
+      }
+    }
 }
