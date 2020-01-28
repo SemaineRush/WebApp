@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import '../Assets/maeliss.css';
+import { Link } from 'react-router-dom';
 import profil from '../Assets/media/maeliss/profil-pic.png';
 import waveOne from '../Assets/media/maeliss/vague-un.svg';
 import arrowOne from '../Assets/media/maeliss/fleche-bas.svg';
@@ -215,19 +216,19 @@ const Maeliss = (props) => {
 								Retrouvez Maëliss<span>sur les réseaux</span>
 							</p>
 						</div>
-						<a href="/" className="social">
+						<a href="#" className="social">
 							<img src={insta} alt="instagram" />
 							<p className="insta">IG_maelT</p>
 						</a>
-						<a href="/" className="social">
+						<a href="#" className="social">
 							<img src={snap} alt="snapchat" />
 							<p className="snap">mealmaire</p>
 						</a>
-						<a href="/" className="social">
+						<a href="#" className="social">
 							<img src={twitter} alt="twitter" />
 							<p className="twitter">mayocurly</p>
 						</a>
-						<a href="/" className="social">
+						<a href="#" className="social">
 							<img src={youtube} alt="youtube" />
 							<p className="youtube">mael_maire</p>
 						</a>
@@ -250,7 +251,7 @@ const Maeliss = (props) => {
 				</div>
 
 				<div>
-					<button>votez !</button>
+					<Link>votez !</Link>
 					<span />
 				</div>
 
