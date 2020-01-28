@@ -169,9 +169,10 @@
 
 .actuality {
     display: grid;
-    grid-template-columns: 1.2fr 1fr;
+    grid-template-columns: 1.23fr 1fr;
     background-color: #E5E5E5;
-
+    height: 70vh;
+    width: 100%;
 }
 
 .actuality .feed {
@@ -179,7 +180,8 @@
     display: flex;
     flex-direction: column;
     padding: 50px;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    max-width: 45%;
 }
 
 .actuality .feed h3 {
@@ -188,13 +190,56 @@
     font-size: 36px;
     line-height: 44px;
     color: #161154;
-
     text-align: start;
+}
 
+.actuality .border {
+    height: 1px;
+    background-color: rgba(111, 103, 229, 0.4);
 }
 
 .actuality .article {
+    position: relative;
     display: flex;
+    align-items: flex-start;
+    border-top: 1px solid rgba(111, 103, 229, 0.4);
+    padding-top: 20px;
+}
+
+.actuality a {
+    transition: 0.15s ease;
+    color: #161154;
+    align-self: flex-end;
+    margin-top: 1em;
+    opacity: 0.8;
+}
+
+.actuality a:hover {
+    opacity: 0.4;
+}
+
+.actuality .article::after {
+    content: "";
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    border: 2px solid #161154;
+    border-left: none;
+    border-bottom: none;
+    bottom: 0;
+    right: 10px;
+    transform: rotate(45deg);
+}
+
+.actuality .article:last-of-type::after {
+    bottom: 20px;
+}
+
+.actuality .article:last-of-type {
+    border-top: none;
+    border-bottom: 1px solid rgba(111, 103, 229, 0.4);
+    padding-top: 0;
+    padding-bottom: 20px;
 }
 
 .actuality .article .article_content {
@@ -222,19 +267,20 @@
 }
 
 .actuality .article img {
-    height: 100px;
+    height: 150px;
     width: auto;
 }
 
 .actuality .map {
     position: relative;
+    height: 100%;
 }
 
 .mapContainer {
     position: absolute;
     height: 100%;
     width: 100%;
-    left: -530px;
+    left: -540px;
 }
 
 .media {

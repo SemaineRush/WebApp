@@ -155,6 +155,7 @@ export default class GuiralVote extends Component {
 								</p>
 							</div>
 						</div>
+						<span className="border" />
 						<div className="article">
 							<img src={articleCover} alt="articleCover" />
 							<div className="article_content">
@@ -165,6 +166,7 @@ export default class GuiralVote extends Component {
 								</p>
 							</div>
 						</div>
+						<a href="#">Voir toutes les actualités</a>
 					</div>
 				</div>
 				<div className="media">
