@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Loader from '../Assets/media/loader.gif';
 import '../Assets/vote.css';
 import api from './Api';
 import swal from 'sweetalert';
@@ -11,12 +12,14 @@ export default class VoteList extends Component {
     this.state = {
       candidates: [],
       chosenCandidat: '',
+      isLoaded: false
     };
   }
   componentDidMount(){
     api.getElections(this.props.electionId).then((data) => {
         this.setState({
-          candidates: data['hydra:member'][0].candidateElection
+          candidates: data['hydra:member'][0].candidateElection,
+          isLoaded: true
         })
     })
   }
@@ -39,6 +42,13 @@ export default class VoteList extends Component {
     })
 }
     render() {
+      if (this.state.isLoaded === false) {
+        return (
+          <div>
+            <img src={Loader} />
+          </div>
+        )
+      } else {
         return (
           <form className="form_vote_list" onSubmit={this.handleSubmit.bind(this)}>
             <div className="vote-list">
@@ -75,5 +85,6 @@ export default class VoteList extends Component {
             </div>
             </form>
         )
+      }
     }
 }
