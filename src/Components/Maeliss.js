@@ -18,7 +18,7 @@ import insta from '../Assets/media/maeliss/icon-insta.svg';
 import snap from '../Assets/media/maeliss/icon-snap.svg';
 import twitter from '../Assets/media/maeliss/icon-twitter.svg';
 import youtube from '../Assets/media/maeliss/icon-youtube.svg';
-import ReactPlayer from 'react-player'
+import ReactPlayer from 'react-player';
 
 const createSquares = (number) => {
 	let squares = [];
@@ -39,29 +39,29 @@ const Maeliss = (props) => {
 
 	return (
 		<div className="containerMaeliss">
-			<img src={waveOne} className="wave-one" alt="waveOne"/>
+			<img src={waveOne} className="wave-one" alt="waveOne" />
 
 			<section className="part-one">
 				<span className="squareSkew" />
 				<img src={whiteLines} className="white-lines" alt="whiteLines" />
-				<img src={arrowOne} className="arrow-one" alt="arrow"/>
+				<img src={arrowOne} className="arrow-one" alt="arrow" />
 				<img src={arrowTwo} className="arrow-two" alt="arrow" />
-				<img src={paf} className="paf" alt="paf"/>
+				<img src={paf} className="paf" alt="paf" />
 
 				<p className="p-one">leader de confiance</p>
 				<p className="p-two">multiculturelle</p>
 
 				<div className="boom">
-					<img src={bubbleOne} alt="bubbleOne"/>
+					<img src={bubbleOne} alt="bubbleOne" />
 					<p>dynamique</p>
 				</div>
 				<div className="envelope">
-					<img src={enveloppe} alt="enveloppe"/>
+					<img src={enveloppe} alt="enveloppe" />
 					<p>votez</p>
 				</div>
 
 				<div className="bubble">
-					<img src={bubbleTwo} alt="bubbleTwo"/>
+					<img src={bubbleTwo} alt="bubbleTwo" />
 					<h1>
 						maëliss<br />taraud<br />
 						<span>
@@ -72,7 +72,7 @@ const Maeliss = (props) => {
 
 				<div className="card card-three">
 					<div className="img">
-						<img src={profil} alt="profil"/>
+						<img src={profil} alt="profil" />
 					</div>
 					<p>
 						ensemble vers<br /> l'avenir
@@ -80,7 +80,7 @@ const Maeliss = (props) => {
 				</div>
 				<div className="card card-two">
 					<div className="img">
-						<img src={profil} alt="profil"/>
+						<img src={profil} alt="profil" />
 					</div>
 					<p>
 						ensemble vers<br /> l'avenir
@@ -88,7 +88,7 @@ const Maeliss = (props) => {
 				</div>
 				<div className="card">
 					<div className="img">
-						<img src={profil} alt="profil"/>
+						<img src={profil} alt="profil" />
 					</div>
 					<p>
 						ensemble vers<br /> l'avenir
@@ -118,10 +118,10 @@ const Maeliss = (props) => {
 					</div>
 					<div className="content content-two">
 						<span />
-						<button>
-							<h3>fast & curious</h3>
+						<a href="https://www.youtube.com/watch?v=W2G9eqCNG8Y&t=" target="_blank">
+							<h3>sup & curious</h3>
 							<p>de Maëliss</p>
-						</button>
+						</a>
 					</div>
 				</div>
 			</section>
@@ -172,13 +172,13 @@ const Maeliss = (props) => {
 			</section>
 
 			<section className="part-four">
-				<img src={waveTwo} className="wave-two" alt="waveTwo"/>
-				<img className="arrow" src={arrowThree} alt="arrow"/>
+				<img src={waveTwo} className="wave-two" alt="waveTwo" />
+				<img className="arrow" src={arrowThree} alt="arrow" />
 				<div>
 					<h3>Faites le choix</h3>
 					<h2>maëliss</h2>
 				</div>
-				<img className="arrow" src={arrowFour} alt="arrow"/>
+				<img className="arrow" src={arrowFour} alt="arrow" />
 			</section>
 
 			<section className="part-five">
@@ -190,24 +190,18 @@ const Maeliss = (props) => {
 					<div className="squaresColumn">{createSquares(8).map((square) => square)}</div>
 
 					<div className="videoContainer">
-						<ReactPlayer 
-						className="player"
-						height="85%"
-						width="100%"
-						url='https://www.youtube.com/watch?v=m7SlTS8R2I0'
-						controls
-						>
-						</ReactPlayer>
+						<ReactPlayer
+							className="video"
+							height="24.75vw"
+							width="44vw"
+							url="https://www.youtube.com/watch?v=3kbcHrXPUZs"
+							controls
+						/>
 						<div className="bubble">
-							<img src={bubbleThree} alt="bubbleThree"/>
+							<img src={bubbleThree} alt="bubbleThree" />
 							<p>
 								Retrouvez Maëliss<span>en vidéo</span>
 							</p>
-						</div>
-						<div className="video">
-							<button>
-								<img src="" alt="e" />
-							</button>
 						</div>
 					</div>
 
@@ -216,13 +210,13 @@ const Maeliss = (props) => {
 
 					<div className="socialContainer">
 						<div className="bubble">
-							<img src={bubbleThree} alt="bubbleThree"/>
+							<img src={bubbleThree} alt="bubbleThree" />
 							<p>
 								Retrouvez Maëliss<span>sur les réseaux</span>
 							</p>
 						</div>
 						<a href="/" className="social">
-							<img src={insta} alt="instagram"/>
+							<img src={insta} alt="instagram" />
 							<p className="insta">IG_maelT</p>
 						</a>
 						<a href="/" className="social">
@@ -250,7 +244,7 @@ const Maeliss = (props) => {
 
 			<section className="part-six">
 				<div>
-					<img src={mouth} alt="bouche"  />
+					<img src={mouth} alt="bouche" />
 					<img src={mouth} alt="bouche" />
 					<img src={mouth} alt="bouche" />
 				</div>
@@ -261,9 +255,9 @@ const Maeliss = (props) => {
 				</div>
 
 				<div>
-					<img src={mouth} alt="bouche"/>
-					<img src={mouth} alt="bouche"/>
-					<img src={mouth} alt="bouche"/>
+					<img src={mouth} alt="bouche" />
+					<img src={mouth} alt="bouche" />
+					<img src={mouth} alt="bouche" />
 				</div>
 			</section>
 		</div>
