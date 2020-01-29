@@ -15,6 +15,7 @@ import youtube from '../Assets/media/guiral/youtubeGuiral.svg';
 import facebook from '../Assets/media/guiral/facebookGuiral.svg';
 import twitter from '../Assets/media/guiral/twitterGuiral.svg';
 import snap from '../Assets/media/guiral/snapGuiral.svg';
+import { Link } from 'react-router-dom';
 
 import '../Assets/guiralvote.css';
 
@@ -41,6 +42,9 @@ export default class GuiralVote extends Component {
 	render() {
 		return (
 			<div className="guiral_home">
+				<Link className="btnGuiral" to="/home">
+					Page d'accueil
+				</Link>
 				<div className="programme_pt1">
 					<div className="left_pt">
 						<img alt="profile" src={Profile} />
