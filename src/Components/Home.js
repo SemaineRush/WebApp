@@ -33,7 +33,7 @@ export default class Home extends Component {
 		
 	}
 	render() {
-		// if (this.state.electionIsOver === true) {
+		if (this.state.electionIsOver === false) {
 			return (
 				<div>
 					<Header />
@@ -54,24 +54,24 @@ export default class Home extends Component {
 				</div>
 			);
 			
-		// } else {
-		// 	if (this.state.electionWinner === 3) {
-		// 		return (
-		// 			<Maeliss />
+		} else {
+			if (this.state.electionWinner === 3) {
+				return (
+					<Maeliss />
 					
-		// 		)
-		// 	}
-		// 	if (this.state.electionWinner === 90) {
-		// 		return (
-		// 			<Arevichan />
-		// 		)
-		// 	}
-		// 	if (this.state.electionWinner === 92) {
-		// 		return (
-		// 			<Guiral />
-		// 		)
-		// 	}
-		// }
+				)
+			}
+			if (this.state.electionWinner === 90) {
+				return (
+					<Arevichan />
+				)
+			}
+			if (this.state.electionWinner === 92) {
+				return (
+					<Guiral />
+				)
+			}
+		}
 		
 	}
 }

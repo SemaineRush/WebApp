@@ -30,12 +30,12 @@ export default class VoteList extends Component {
 			chosenCandidat: e.target.value
     });
     
-  };
-  
-  handleSubmit(e) {
-    e.preventDefault()
-    api.vote(this.props.electionId,this.state.chosenCandidat).then((json) => {
-    })
+	};
+
+	handleSubmit(e) {
+	e.preventDefault()
+	api.vote(this.props.electionId,this.state.chosenCandidat).then((json) => {
+	})
 }
     render() {
         if (this.state.isLoaded === false) {
