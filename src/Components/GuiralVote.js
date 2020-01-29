@@ -49,7 +49,6 @@ export default class GuiralVote extends Component {
 						</h1>
 					</div>
 					<div className="right_pt">
-						<div />
 						<div className="programme">
 							<h2>LE PROGRAMME</h2>
 							<span />
@@ -102,21 +101,24 @@ export default class GuiralVote extends Component {
 				</div>
 				<div className="programme_pt2">
 					<div className="pt2_left">
-						<h3>
-							Un candidat, un homme<br /> qui s’est construit.
-						</h3>
-						<p>
-							<b>Guiral</b>, un jeune homme issu de quartiers défavorisés a dû apprendre très tôt à se
-							débrouiller seul et avancer par lui-même. Très peu de personnes ont cru en lui et le
-							destinait à rester en bas de l’échelle. Personne ne voyait en lui un avenir. <b>Seul</b> lui
-							se faisait confiance c’est pourquoi il a persisté et beaucoup travaillé.<br /> Grâce à sa{' '}
-							<b>motivation</b>, sa <b>persévérance</b> et son caractère de conquérant, il a toujours
-							effectué ses propres choix et a suivi ses <b>intuitions</b> pour mener à bien tous ses{' '}
-							<b>projets</b>, ce qui lui vaut aujourd’hui son parcours et sa candidature à l’élection
-							municipale de SUP 2020. Ses idées de campagne, il les tient de ses études supérieures
-							desquelles il a été diplômé. Grâce à elles, il a pu <b>créer sa propre structure</b> qui
-							permet de mettre en relation des entrepreneurs avec des entreprises.
-						</p>
+						<div>
+							<h3>
+								Un candidat, un homme<br /> qui s’est construit.
+							</h3>
+							<p>
+								<b>Guiral</b>, un jeune homme issu de quartiers défavorisés a dû apprendre très tôt à se
+								débrouiller seul et avancer par lui-même. Très peu de personnes ont cru en lui et le
+								destinait à rester en bas de l’échelle. Personne ne voyait en lui un avenir. <b>Seul</b>{' '}
+								lui se faisait confiance c’est pourquoi il a persisté et beaucoup travaillé.<br /> Grâce
+								à sa <b>motivation</b>, sa <b>persévérance</b> et son caractère de conquérant, il a
+								toujours effectué ses propres choix et a suivi ses <b>intuitions</b> pour mener à bien
+								tous ses <b>projets</b>, ce qui lui vaut aujourd’hui son parcours et sa candidature à
+								l’élection municipale de SUP 2020. Ses idées de campagne, il les tient de ses études
+								supérieures desquelles il a été diplômé. Grâce à elles, il a pu{' '}
+								<b>créer sa propre structure</b> qui permet de mettre en relation des entrepreneurs avec
+								des entreprises.
+							</p>
+						</div>
 					</div>
 					<div className="pt2_right">
 						<h1>
@@ -178,16 +180,16 @@ export default class GuiralVote extends Component {
 						<div>
 							<h3>Suivez notre campagne</h3>
 							<div>
-								<a href="#">
+								<a>
 									<img src={youtube} />
 								</a>
-								<a href="#">
+								<a>
 									<img src={facebook} />
 								</a>
-								<a href="#">
+								<a>
 									<img src={twitter} />
 								</a>
-								<a href="#">
+								<a>
 									<img src={snap} />
 								</a>
 							</div>
@@ -196,8 +198,8 @@ export default class GuiralVote extends Component {
 
 					<ReactPlayer
 						className="player"
-						height="85%"
-						width="100%"
+						height="25.25625vw"
+						width="44.9vw"
 						url="https://www.youtube.com/embed/9fwgC1C7hT4"
 						controls
 					/>
