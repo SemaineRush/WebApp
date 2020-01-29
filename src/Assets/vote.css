@@ -81,6 +81,10 @@ h1 {
     margin-bottom: 1em;
 }
 
+.candidate:hover {
+    cursor: pointer;
+}
+
 .candidate:last-child .img-candidate {
     border: 1px solid #000;
     border-bottom: none;
