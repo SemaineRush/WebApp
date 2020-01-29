@@ -29,7 +29,6 @@ export default class VoteList extends Component {
 		this.setState({
 			chosenCandidat: e.target.value
     });
-    swal("Vous aller votez pour", e.target.candidat);
     
   };
   
