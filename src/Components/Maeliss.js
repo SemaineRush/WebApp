@@ -40,6 +40,10 @@ const Maeliss = (props) => {
 
 	return (
 		<div className="containerMaeliss">
+			<Link className="btnHome btnHome-maeliss" to="/home">
+				Page d'accueil
+			</Link>
+
 			<img src={waveOne} className="wave-one" alt="waveOne" />
 
 			<section className="part-one">

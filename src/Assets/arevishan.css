@@ -1,3 +1,15 @@
+.btnHome-arevichan {
+	color: #5294ff;
+}
+
+.btnHome-arevichan::before {
+	border-color: #5294ff;
+}
+
+.btnHome-arevichan::after {
+	background-color: #5294ff;
+}
+
 .arevishContainer {
 	font-family: Montserrat, Arial, Helvetica, sans-serif;
 	font-size: 25px;

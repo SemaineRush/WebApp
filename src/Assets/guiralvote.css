@@ -1,57 +1,13 @@
-.btnGuiral {
-    position: fixed;
-    z-index: 99;
-    transition: 0.15s ease-in;
+.btnHome-guiral {
     color: #4237CA;
-    background-color: rgba(255, 255, 255, 0.5);
-    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
-    top: 25px;
-    right: 25px;
-    padding: 0.3em 1em;
-    text-decoration: none;
 }
 
-.btnGuiral::before {
-    content: "";
-    transition: 0.25S ease-in-out;
-    position: absolute;
-    top: 50%;
-    left: 0;
-    height: 1vh;
-    width: 1vh;
-    border: 2px solid white;
-    border-top: none;
-    border-right: none;
-    transform: translate(0, -50%) rotate(45deg);
-    opacity: 0;
+.btnHome-guiral::before {
+    border-color: white;
 }
 
-.btnGuiral::after {
-    content: "";
-    transition: 0.25S ease-in-out;
-    position: absolute;
-    width: 4vh;
-    height: 2px;
+.btnHome-guiral::after {
     background-color: white;
-    top: 50%;
-    left: 0;
-    transform: translate(0, -50%);
-    opacity: 0;
-}
-
-.btnGuiral:hover {
-    cursor: pointer;
-    background-color: white;
-}
-
-.btnGuiral:hover::before {
-    left: -5vh;
-    opacity: 1;
-}
-
-.btnGuiral:hover::after {
-    left: -5vh;
-    opacity: 1;
 }
 
 .programme_pt1 {

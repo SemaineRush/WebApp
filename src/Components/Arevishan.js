@@ -13,6 +13,9 @@ export default class Arevishan extends Component {
 	render() {
 		return (
 			<div className="arevishContainer">
+				<Link className="btnHome btnHome-arevichan" to="/home">
+					Page d'accueil
+				</Link>
 				<div className="header">
 					<div className="image">
 						<img alt="profile" src={profile} />

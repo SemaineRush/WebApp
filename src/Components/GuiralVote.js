@@ -42,7 +42,7 @@ export default class GuiralVote extends Component {
 	render() {
 		return (
 			<div className="guiral_home">
-				<Link className="btnGuiral" to="/home">
+				<Link className="btnHome btnHome-guiral" to="/home">
 					Page d'accueil
 				</Link>
 				<div className="programme_pt1">
