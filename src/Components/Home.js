@@ -61,7 +61,7 @@ export default class Home extends Component {
 					
 				)
 			}
-			if (this.state.electionWinner === 90) {
+			if (this.state.electionWinner === 103) {
 				return (
 					<Arevichan />
 				)
