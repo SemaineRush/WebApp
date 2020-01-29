@@ -22,7 +22,6 @@ export default class LogIn extends Component {
     handleSubmit(e) {
         e.preventDefault()
         api.getToken(this.state.email,this.state.password).then((json) => {
-            console.log(json)
             this.props.changeStatus(true)
         })
     }

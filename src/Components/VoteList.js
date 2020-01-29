@@ -39,15 +39,15 @@ export default class VoteList extends Component {
     })
 }
     render() {
-      if (this.state.isLoaded === false) {
+        if (this.state.isLoaded === false) {
         return (
-          <div>
+            <div>
             <img src={Loader} />
-          </div>
+            </div>
         )
-      } else {
+        } else {
         return (
-          <form className="form_vote_list" onSubmit={this.handleSubmit.bind(this)}>
+        	<form className="form_vote_list" onSubmit={this.handleSubmit.bind(this)}>
 				<div className="vote-list">
 					{this.state.candidates.map((candidate) => {
 						return (
@@ -96,6 +96,6 @@ export default class VoteList extends Component {
 				</div>
 			</form>
         )
-      }
+        }
     }
 }

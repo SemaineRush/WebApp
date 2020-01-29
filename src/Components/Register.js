@@ -27,7 +27,6 @@ export default class Register extends Component {
         } else {
             api.Register(this.state.firstname, this.state.lastname, this.state.email, this.state.password).then((json) =>{
             // this.props.changeStatus(true)
-            console.log(json)
             })
         }
             

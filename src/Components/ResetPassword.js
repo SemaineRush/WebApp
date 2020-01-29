@@ -16,7 +16,6 @@ export default class ResetPassword extends Component {
     handleSubmit(e) {
         e.preventDefault()
         api.ResetPassword(this.state.email).then((json) =>{
-            console.log(json)
         })
     }
     render() {
